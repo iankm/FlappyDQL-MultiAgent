@@ -2,7 +2,12 @@ import pygame
 import sys
 def load():
     # path of player with different states
-    PLAYER_PATH = (
+    PLAYER_PATH_1 = (
+            'assets/sprites/redbird-upflap.png',
+            'assets/sprites/redbird-midflap.png',
+            'assets/sprites/redbird-downflap.png'
+    )
+    PLAYER_PATH_2 = (
             'assets/sprites/redbird-upflap.png',
             'assets/sprites/redbird-midflap.png',
             'assets/sprites/redbird-downflap.png'
@@ -49,10 +54,15 @@ def load():
     IMAGES['background'] = pygame.image.load(BACKGROUND_PATH).convert()
 
     # select random player sprites
-    IMAGES['player'] = (
-        pygame.image.load(PLAYER_PATH[0]).convert_alpha(),
-        pygame.image.load(PLAYER_PATH[1]).convert_alpha(),
-        pygame.image.load(PLAYER_PATH[2]).convert_alpha(),
+    IMAGES['player1'] = (
+        pygame.image.load(PLAYER_PATH_1[0]).convert_alpha(),
+        pygame.image.load(PLAYER_PATH_1[1]).convert_alpha(),
+        pygame.image.load(PLAYER_PATH_1[2]).convert_alpha(),
+    )
+    IMAGES['player2'] = (
+        pygame.image.load(PLAYER_PATH_2[0]).convert_alpha(),
+        pygame.image.load(PLAYER_PATH_2[1]).convert_alpha(),
+        pygame.image.load(PLAYER_PATH_2[2]).convert_alpha(),
     )
 
     # select random pipe sprites
@@ -69,10 +79,15 @@ def load():
     )
 
     # hitmask for player
-    HITMASKS['player'] = (
-        getHitmask(IMAGES['player'][0]),
-        getHitmask(IMAGES['player'][1]),
-        getHitmask(IMAGES['player'][2]),
+    HITMASKS['player1'] = (
+        getHitmask(IMAGES['player1'][0]),
+        getHitmask(IMAGES['player1'][1]),
+        getHitmask(IMAGES['player1'][2]),
+    )
+    HITMASKS['player2'] = (
+        getHitmask(IMAGES['player2'][0]),
+        getHitmask(IMAGES['player2'][1]),
+        getHitmask(IMAGES['player2'][2]),
     )
 
     return IMAGES, SOUNDS, HITMASKS
