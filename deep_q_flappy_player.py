@@ -1,235 +1,223 @@
-# This is heavily based off https://github.com/asrivat1/DeepLearningVideoGames
-import os
-import random
-from collections import deque
-from flappy_player import FlappyPlayer
+#!/usr/bin/env python
+from __future__ import print_function
+
 import tensorflow as tf
-import numpy as np
 import cv2
-from pygame.constants import K_DOWN, K_UP
+import sys
+sys.path.append("games/")
+import wrapped_flappy_bird as game
+# from wrapped_flappy_bird import itercount
+import random
+import numpy as np
+from collections import deque
 
-class DeepQFlappyPlayer(FlappyPlayer):
-    ACTIONS_COUNT = 2  # number of valid actions. In this case up, still and down
-    FUTURE_REWARD_DISCOUNT = 0.99  # decay rate of past observations
-    OBSERVATION_STEPS = 50000.  # time steps to observe before training
-    EXPLORE_STEPS = 500000.  # frames over which to anneal epsilon
-    INITIAL_RANDOM_ACTION_PROB = 1.0  # starting chance of an action being random
-    FINAL_RANDOM_ACTION_PROB = 0.05  # final chance of an action being random
-    MEMORY_SIZE = 500000  # number of observations to remember
-    MINI_BATCH_SIZE = 100  # size of mini batches
-    STATE_FRAMES = 4  # number of frames to store in the state
-    RESIZED_SCREEN_X, RESIZED_SCREEN_Y = (80, 80)
-    OBS_LAST_STATE_INDEX, OBS_ACTION_INDEX, OBS_REWARD_INDEX, OBS_CURRENT_STATE_INDEX, OBS_TERMINAL_INDEX = range(5)
-    SAVE_EVERY_X_STEPS = 10000
-    LEARN_RATE = 1e-6
-    STORE_SCORES_LEN = 200.
+GAME = 'flappybird' # the name of the game being played for log files
+ACTIONS = 2 # number of valid actions
+GAMMA = 0.99 # decay rate of past observations
+OBSERVATION_STEPS = 100000. # timesteps to observe before training
+EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
+FINAL_EPSILON = 0.001 # final value of epsilon 0.0001
+INITIAL_EPSILON = 0.01 # starting value of epsilon 0.0001
+REPLAY_MEMORY = 50000 # number of previous transitions to remember
+BATCH = 32 # size of minibatch
+FRAME_PER_ACTION = 1
+LOAD_CHECKPOINTS = False
+OLD_CHECKPOINTS = False
 
-    def __init__(self, checkpoint_path="dq_flappy_networks", playback_mode=False, verbose_logging=False):
-        """
-        :param checkpoint_path: directory to store checkpoints in
-        :type checkpoint_path: str
-        :param playback_mode: if true games runs in real time mode and demos itself running
-        :type playback_mode: bool
-        :param verbose_logging: If true then extra log information is printed to std out
-        :type verbose_logging: bool
-        """
-        self._playback_mode = playback_mode
-        super(DeepQFlappyPlayer, self).__init__(force_game_fps=8, run_real_time=playback_mode)
-        self.verbose_logging = verbose_logging
-        self._checkpoint_path = checkpoint_path
-        self._session = tf.Session()
-        self._input_layer, self._output_layer = DeepQFlappyPlayer._create_network()
+def weight_variable(shape):
+    initial = tf.truncated_normal(shape, stddev = 0.01)
+    return tf.Variable(initial)
 
-        self._action = tf.placeholder("float", [None, self.ACTIONS_COUNT])
-        self._target = tf.placeholder("float", [None])
+def bias_variable(shape):
+    initial = tf.constant(0.01, shape = shape)
+    return tf.Variable(initial)
 
-        readout_action = tf.reduce_sum(tf.mul(self._output_layer, self._action), reduction_indices=1)
+def conv2d(x, W, stride):
+    return tf.nn.conv2d(x, W, strides = [1, stride, stride, 1], padding = "SAME")
 
-        cost = tf.reduce_mean(tf.square(self._target - readout_action))
-        self._train_operation = tf.train.AdamOptimizer(self.LEARN_RATE).minimize(cost)
+def max_pool_2x2(x):
+    return tf.nn.max_pool(x, ksize = [1, 2, 2, 1], strides = [1, 2, 2, 1], padding = "SAME")
 
-        self._observations = deque()
-        self._last_scores = deque()
+def createNetwork():
+    # network weights
+    W_conv1 = weight_variable([8, 8, 4, 32])
+    b_conv1 = bias_variable([32])
 
-        # set the first action to do nothing
-        self._last_action = np.zeros(self.ACTIONS_COUNT)
-        self._last_action[1] = 1
+    W_conv2 = weight_variable([4, 4, 32, 64])
+    b_conv2 = bias_variable([64])
 
-        self._last_state = None
-        self._probability_of_random_action = self.INITIAL_RANDOM_ACTION_PROB
-        self._time = 0
+    W_conv3 = weight_variable([3, 3, 64, 64])
+    b_conv3 = bias_variable([64])
 
-        self._session.run(tf.initialize_all_variables())
+    W_fc1 = weight_variable([1600, 512])
+    b_fc1 = bias_variable([512])
 
-        if not os.path.exists(self._checkpoint_path):
-            os.mkdir(self._checkpoint_path)
-        self._saver = tf.train.Saver()
-        checkpoint = tf.train.get_checkpoint_state(self._checkpoint_path)
+    W_fc2 = weight_variable([512, ACTIONS])
+    b_fc2 = bias_variable([ACTIONS])
 
+    # input layer
+    s = tf.placeholder("float", [None, 80, 80, 4])
+
+    # hidden layers
+    h_conv1 = tf.nn.relu(conv2d(s, W_conv1, 4) + b_conv1)
+    h_pool1 = max_pool_2x2(h_conv1)
+
+    h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2, 2) + b_conv2)
+    #h_pool2 = max_pool_2x2(h_conv2)
+
+    h_conv3 = tf.nn.relu(conv2d(h_conv2, W_conv3, 1) + b_conv3)
+    #h_pool3 = max_pool_2x2(h_conv3)
+
+    #h_pool3_flat = tf.reshape(h_pool3, [-1, 256])
+    h_conv3_flat = tf.reshape(h_conv3, [-1, 1600])
+
+    h_fc1 = tf.nn.relu(tf.matmul(h_conv3_flat, W_fc1) + b_fc1)
+
+    # readout layer
+    readout = tf.matmul(h_fc1, W_fc2) + b_fc2
+
+    return s, readout, h_fc1
+
+def trainNetwork(s, readout, h_fc1, sess):
+    # define the cost function
+    a = tf.placeholder("float", [None, ACTIONS])
+    y = tf.placeholder("float", [None])
+    readout_action = tf.reduce_sum(tf.mul(readout, a), reduction_indices=1)
+    cost = tf.reduce_mean(tf.square(y - readout_action))
+    train_step = tf.train.AdamOptimizer(1e-6).minimize(cost)
+
+    # open up a game state to communicate with emulator
+    game_state = game.GameState()
+
+    # store the previous observations in replay memory
+    D = deque()
+
+    # printing
+    a_file = open("logs_" + GAME + "/readout.txt", 'w')
+    h_file = open("logs_" + GAME + "/hidden.txt", 'w')
+
+    # get the first state by doing nothing and preprocess the image to 80x80x4
+    do_nothing = np.zeros(ACTIONS)
+    do_nothing[0] = 1
+    x_t, r_0, terminal = game_state.frame_step(do_nothing)
+    x_t = cv2.cvtColor(cv2.resize(x_t, (80, 80)), cv2.COLOR_BGR2GRAY)
+    ret, x_t = cv2.threshold(x_t,1,255,cv2.THRESH_BINARY)
+    s_t = np.stack((x_t, x_t, x_t, x_t), axis=2)
+
+    # saving and loading networks
+    saver = tf.train.Saver()
+    sess.run(tf.initialize_all_variables())
+    if(LOAD_CHECKPOINTS):
+        if(OLD_CHECKPOINTS):
+            checkpoint = tf.train.get_checkpoint_state("github_networks")
+        else:
+            checkpoint = tf.train.get_checkpoint_state("saved_networks")
         if checkpoint and checkpoint.model_checkpoint_path:
-            self._saver.restore(self._session, checkpoint.model_checkpoint_path)
-            print("Loaded checkpoints %s" % checkpoint.model_checkpoint_path)
-        elif playback_mode:
-            raise Exception("Could not load checkpoints for playback")
+           saver.restore(sess, checkpoint.model_checkpoint_path)
+           print("Successfully loaded:", checkpoint.model_checkpoint_path)
+        else:
+           print("Could not find old network weights")
 
-    def get_keys_pressed(self, screen_array, reward, terminal):
-        # scale down screen image
-        screen_resized_grayscaled = cv2.cvtColor(cv2.resize(screen_array,
-                                                            (self.RESIZED_SCREEN_X, self.RESIZED_SCREEN_Y)),
-                                                 cv2.COLOR_BGR2GRAY)
+    # start training
+    epsilon = INITIAL_EPSILON
+    t = 0
+    while "flappy bird" != "donald trump":
+        # choose an action epsilon greedily
+        itercount = game.itercount
 
-        # set the pixels to all be 0. or 1.
-        _, screen_resized_binary = cv2.threshold(screen_resized_grayscaled, 1, 255, cv2.THRESH_BINARY)
+        readout_t = readout.eval(feed_dict={s : [s_t]})[0]
+        a_t = np.zeros([ACTIONS])
+        action_index = 0
+        if t % FRAME_PER_ACTION == 0:
+            if random.random() <= epsilon:
+                print("----------Random Action----------")
+                action_index = random.randrange(ACTIONS)
+                a_t[random.randrange(ACTIONS)] = 1
+            else:
+                action_index = np.argmax(readout_t)
+                a_t[action_index] = 1
+        else:
+            a_t[0] = 0 # do nothing
 
-        if reward != 0.0:
-            self._last_scores.append(reward)
-            if len(self._last_scores) > self.STORE_SCORES_LEN:
-                self._last_scores.popleft()
+        # scale down epsilon
+        if epsilon > FINAL_EPSILON and t > OBSERVATION_STEPS:
+            epsilon -= (INITIAL_EPSILON - FINAL_EPSILON) / EXPLORATION_STEPS
 
-        # first frame must be handled differently
-        if self._last_state is None:
-            # the _last_state will contain the image data from the last self.STATE_FRAMES frames
-            self._last_state = np.stack(tuple(screen_resized_binary for _ in range(self.STATE_FRAMES)), axis=2)
-            return DeepQFlappyPlayer._key_presses_from_action(self._last_action)
+        # run the selected action and observe next state and reward
+        x_t1_colored, r_t, terminal = game_state.frame_step(a_t)
+        x_t1 = cv2.cvtColor(cv2.resize(x_t1_colored, (80, 80)), cv2.COLOR_BGR2GRAY)
+        ret, x_t1 = cv2.threshold(x_t1, 1, 255, cv2.THRESH_BINARY)
+        x_t1 = np.reshape(x_t1, (80, 80, 1))
+        #s_t1 = np.append(x_t1, s_t[:,:,1:], axis = 2)
+        s_t1 = np.append(x_t1, s_t[:, :, :3], axis=2)
 
-        screen_resized_binary = np.reshape(screen_resized_binary,
-                                               (self.RESIZED_SCREEN_X, self.RESIZED_SCREEN_Y, 1))
-        current_state = np.append(self._last_state[:, :, 1:], screen_resized_binary, axis=2)
+        # store the transition in D
+        D.append((s_t, a_t, r_t, s_t1, terminal))
+        if len(D) > REPLAY_MEMORY:
+            D.popleft()
 
-        if not self._playback_mode:
-            # store the transition in previous_observations
-            self._observations.append((self._last_state, self._last_action, reward, current_state, terminal))
+        # only train if done observing
+        if t > OBSERVATION_STEPS:
+            # sample a minibatch to train on
+            minibatch = random.sample(D, BATCH)
 
-            if len(self._observations) > self.MEMORY_SIZE:
-                self._observations.popleft()
+            # get the batch variables
+            s_j_batch = [d[0] for d in minibatch]
+            a_batch = [d[1] for d in minibatch]
+            r_batch = [d[2] for d in minibatch]
+            s_j1_batch = [d[3] for d in minibatch]
 
-            # only train if done observing
-            if len(self._observations) > self.OBSERVATION_STEPS:
-                self._train()
-                self._time += 1
+            y_batch = []
+            readout_j1_batch = readout.eval(feed_dict = {s : s_j1_batch})
+            for i in range(0, len(minibatch)):
+                terminal = minibatch[i][4]
+                # if terminal, only equals reward
+                if terminal:
+                    y_batch.append(r_batch[i])
+                else:
+                    y_batch.append(r_batch[i] + GAMMA * np.max(readout_j1_batch[i]))
+
+            # perform gradient step
+            train_step.run(feed_dict = {
+                y : y_batch,
+                a : a_batch,
+                s : s_j_batch}
+            )
 
         # update the old values
-        self._last_state = current_state
+        s_t = s_t1
+        t += 1
 
-        self._last_action = self._choose_next_action()
+        # save progress every 10000 iterations
+        if t % 10000 == 0:
+            saver.save(sess, 'saved_networks/' + GAME + '-dqn', global_step = t)
 
-        if not self._playback_mode:
-            # gradually reduce the probability of a random actionself.
-            if self._probability_of_random_action > self.FINAL_RANDOM_ACTION_PROB \
-                    and len(self._observations) > self.OBSERVATION_STEPS:
-                self._probability_of_random_action -= \
-                    (self.INITIAL_RANDOM_ACTION_PROB - self.FINAL_RANDOM_ACTION_PROB) / self.EXPLORE_STEPS
-
-            print("Time: %s random_action_prob: %s reward %s scores differential %s" %
-                  (self._time, self._probability_of_random_action, reward,
-                   sum(self._last_scores) / self.STORE_SCORES_LEN))
-
-        return DeepQFlappyPlayer._key_presses_from_action(self._last_action)
-
-    def _choose_next_action(self):
-        new_action = np.zeros([self.ACTIONS_COUNT])
-
-        if (not self._playback_mode) and (random.random() <= self._probability_of_random_action):
-            # choose an action randomly
-            action_index = random.randrange(self.ACTIONS_COUNT)
+        # print info
+        state = ""
+        if t <= OBSERVATION_STEPS:
+            state = "observe"
+        elif t > OBSERVATION_STEPS and t <= OBSERVATION_STEPS + EXPLORATION_STEPS:
+            state = "explore"
         else:
-            # choose an action given our last state
-            readout_t = self._session.run(self._output_layer, feed_dict={self._input_layer: [self._last_state]})[0]
-            if self.verbose_logging:
-                print("Action Q-Values are %s" % readout_t)
-            action_index = np.argmax(readout_t)
+            state = "train"
 
-        new_action[action_index] = 1
-        return new_action
+        # if itercount % 50 == 0:
+        #    print("iteration:", itercount, "/ STATE", state, "/ Q_MAX %e" % np.max(readout_t))
+        # write info to files
+        '''
+        if t % 10000 <= 100:
+            a_file.write(",".join([str(x) for x in readout_t]) + '\n')
+            h_file.write(",".join([str(x) for x in h_fc1.eval(feed_dict={s:[s_t]})[0]]) + '\n')
+            cv2.imwrite("logs_tetris/frame" + str(t) + ".png", x_t1)
+        '''
 
-    def _train(self):
-        # sample a mini_batch to train on
-        mini_batch = random.sample(self._observations, self.MINI_BATCH_SIZE)
-        # get the batch variables
-        previous_states = [d[self.OBS_LAST_STATE_INDEX] for d in mini_batch]
-        actions = [d[self.OBS_ACTION_INDEX] for d in mini_batch]
-        rewards = [d[self.OBS_REWARD_INDEX] for d in mini_batch]
-        current_states = [d[self.OBS_CURRENT_STATE_INDEX] for d in mini_batch]
-        agents_expected_reward = []
-        # this gives us the agents expected reward for each action we might
-        agents_reward_per_action = self._session.run(self._output_layer, feed_dict={self._input_layer: current_states})
-        for i in range(len(mini_batch)):
-            if mini_batch[i][self.OBS_TERMINAL_INDEX]:
-                # this was a terminal frame so there is no future reward...
-                agents_expected_reward.append(rewards[i])
-            else:
-                agents_expected_reward.append(
-                    rewards[i] + self.FUTURE_REWARD_DISCOUNT * np.max(agents_reward_per_action[i]))
+def playGame():
+    sess = tf.InteractiveSession()
+    s, readout, h_fc1 = createNetwork()
+    trainNetwork(s, readout, h_fc1, sess)
 
-        # learn that these actions in these states lead to this reward
-        self._session.run(self._train_operation, feed_dict={
-            self._input_layer: previous_states,
-            self._action: actions,
-            self._target: agents_expected_reward})
+def main():
+    playGame()
 
-        # save checkpoints for later
-        if self._time % self.SAVE_EVERY_X_STEPS == 0:
-            self._saver.save(self._session, self._checkpoint_path + '/network', global_step=self._time)
-
-    @staticmethod
-    def _create_network():
-        # network weights
-        convolution_weights_1 = tf.Variable(tf.truncated_normal([8, 8, DeepQFlappyPlayer.STATE_FRAMES, 32], stddev=0.01))
-        convolution_bias_1 = tf.Variable(tf.constant(0.01, shape=[32]))
-
-        convolution_weights_2 = tf.Variable(tf.truncated_normal([4, 4, 32, 64], stddev=0.01))
-        convolution_bias_2 = tf.Variable(tf.constant(0.01, shape=[64]))
-
-        convolution_weights_3 = tf.Variable(tf.truncated_normal([3, 3, 64, 64], stddev=0.01))
-        convolution_bias_3 = tf.Variable(tf.constant(0.01, shape=[64]))
-
-        feed_forward_weights_1 = tf.Variable(tf.truncated_normal([256, 256], stddev=0.01))
-        feed_forward_bias_1 = tf.Variable(tf.constant(0.01, shape=[256]))
-
-        feed_forward_weights_2 = tf.Variable(tf.truncated_normal([256, DeepQFlappyPlayer.ACTIONS_COUNT], stddev=0.01))
-        feed_forward_bias_2 = tf.Variable(tf.constant(0.01, shape=[DeepQFlappyPlayer.ACTIONS_COUNT]))
-
-        input_layer = tf.placeholder("float", [None, DeepQFlappyPlayer.RESIZED_SCREEN_X, DeepQFlappyPlayer.RESIZED_SCREEN_Y,
-                                               DeepQFlappyPlayer.STATE_FRAMES])
-
-        hidden_convolutional_layer_1 = tf.nn.relu(
-            tf.nn.conv2d(input_layer, convolution_weights_1, strides=[1, 4, 4, 1], padding="SAME") + convolution_bias_1)
-
-        hidden_max_pooling_layer_1 = tf.nn.max_pool(hidden_convolutional_layer_1, ksize=[1, 2, 2, 1],
-                                                    strides=[1, 2, 2, 1], padding="SAME")
-
-        hidden_convolutional_layer_2 = tf.nn.relu(
-            tf.nn.conv2d(hidden_max_pooling_layer_1, convolution_weights_2, strides=[1, 2, 2, 1],
-                         padding="SAME") + convolution_bias_2)
-
-        hidden_max_pooling_layer_2 = tf.nn.max_pool(hidden_convolutional_layer_2, ksize=[1, 2, 2, 1],
-                                                    strides=[1, 2, 2, 1], padding="SAME")
-
-        hidden_convolutional_layer_3 = tf.nn.relu(
-            tf.nn.conv2d(hidden_max_pooling_layer_2, convolution_weights_3,
-                         strides=[1, 1, 1, 1], padding="SAME") + convolution_bias_3)
-
-        hidden_max_pooling_layer_3 = tf.nn.max_pool(hidden_convolutional_layer_3, ksize=[1, 2, 2, 1],
-                                                    strides=[1, 2, 2, 1], padding="SAME")
-
-        hidden_convolutional_layer_3_flat = tf.reshape(hidden_max_pooling_layer_3, [-1, 256])
-
-        final_hidden_activations = tf.nn.relu(
-            tf.matmul(hidden_convolutional_layer_3_flat, feed_forward_weights_1) + feed_forward_bias_1)
-
-        output_layer = tf.matmul(final_hidden_activations, feed_forward_weights_2) + feed_forward_bias_2
-
-        return input_layer, output_layer
-
-    @staticmethod
-    def _key_presses_from_action(action_set):
-        if action_set[0] == 1:
-            return [K_DOWN]
-        elif action_set[1] == 1:
-            return [K_UP]
-        raise Exception("Unexpected action")
-
-
-if __name__ == '__main__':
-    player = DeepQFlappyPlayer()
-    player.start()
+if __name__ == "__main__":
+    main()

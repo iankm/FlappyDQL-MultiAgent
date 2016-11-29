@@ -1,1 +1,1 @@
-__author__ = 'Daniel'
+__author__ = 'Ian and Corbicito and Caroline'
