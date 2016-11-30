@@ -37,9 +37,9 @@ PLAYER_INDEX_GEN = cycle([0, 1, 2, 1])
 class GameState:
     def __init__(self):
         self.score = self.playerIndex = self.loopIter = 0
-        self.player1x = int(SCREENWIDTH * 0.2)
+        self.player1x = int(SCREENWIDTH * 0.25)
         self.player1y = int((SCREENHEIGHT - PLAYER_HEIGHT - 5) / 2)
-        self.player2x = int(SCREENWIDTH * 0.2)
+        self.player2x = int(SCREENWIDTH * 0.1)
         self.player2y = int((SCREENHEIGHT + PLAYER_HEIGHT + 5) / 2)
         self.basex = 0
         self.baseShift = IMAGES['base'].get_width() - BACKGROUND_WIDTH
