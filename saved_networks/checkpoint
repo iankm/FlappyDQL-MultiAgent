@@ -1,6 +1,2 @@
-model_checkpoint_path: "flappybird-multi_agent_dqn-110000"
-all_model_checkpoint_paths: "flappybird-multi_agent_dqn-70000"
-all_model_checkpoint_paths: "flappybird-multi_agent_dqn-80000"
-all_model_checkpoint_paths: "flappybird-multi_agent_dqn-90000"
-all_model_checkpoint_paths: "flappybird-multi_agent_dqn-100000"
-all_model_checkpoint_paths: "flappybird-multi_agent_dqn-110000"
+model_checkpoint_path: "flappybird-multi_agent_dqn-10000"
+all_model_checkpoint_paths: "flappybird-multi_agent_dqn-10000"

@@ -215,6 +215,7 @@ def trainNetworks(sess):
 
         ### run the selected action and observe next state and reward
         x_t1_colored, r_t_1, r_t_2, terminal = game_state.frame_step(a_t_1, a_t_2)
+        # print (r_t_1, r_t_2, terminal)
         x_t1 = cv2.cvtColor(cv2.resize(x_t1_colored, (80, 80)), cv2.COLOR_BGR2GRAY)
         ret, x_t1 = cv2.threshold(x_t1, 1, 255, cv2.THRESH_BINARY)
         next_obs = np.reshape(x_t1, (80, 80, 1))

@@ -70,8 +70,8 @@ class GameState:
         global itercount
         pygame.event.pump()
 
-        reward_1 = 0
-        reward_2 = 0
+        reward_1 = 0.1
+        reward_2 = 0.1
         terminal = False
 
         if sum(input_actions1) != 1:
@@ -79,10 +79,10 @@ class GameState:
         if sum(input_actions2) != 1:
             raise ValueError('Multiple input actions!')
 
-        # input_actions[0] == 1: do nothing 1
-        # input_actions[1] == 1: flap bird 1
-        # input_actions[2] == 1: do nothing 2
-	    # input_actions[3] == 1: flap bird 2
+        # input_actions1[0] == 1: do nothing 1
+        # input_actions1[1] == 1: flap bird 1
+        # input_actions2[0] == 1: do nothing 2
+	    # input_actions2[1] == 1: flap bird 2
         if input_actions1[1] == 1:
             if self.player1y > -2 * PLAYER_HEIGHT:
                 self.player1VelY = self.playerFlapAcc
@@ -95,13 +95,16 @@ class GameState:
                 #SOUNDS['wing'].play()
 
         # check for score
-        playerMidPos = self.player1x + PLAYER_WIDTH / 2
+        playerMidPos1 = self.player1x + PLAYER_WIDTH / 2
+        playerMidPos2 = self.player2x + PLAYER_WIDTH / 2
         for pipe in self.upperPipes:
             pipeMidPos = pipe['x'] + PIPE_WIDTH / 2
-            if pipeMidPos <= playerMidPos < pipeMidPos + 4:
+            if pipeMidPos <= playerMidPos1 < pipeMidPos + 4:
                 self.score += 1
                 #SOUNDS['point'].play()
                 reward_1 = 1
+            if pipeMidPos <= playerMidPos2 < pipeMidPos + 4:
+                self.score += 1
                 reward_2 = 1
 
         # playerIndex basex change
