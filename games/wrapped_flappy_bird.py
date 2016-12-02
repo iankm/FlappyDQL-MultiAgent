@@ -13,7 +13,7 @@ from itertools import cycle
 FPS = 10000
 SCREENWIDTH  = 288
 SCREENHEIGHT = 512
-DISPLAY = True
+DISPLAY = False
 
 pygame.init()
 FPSCLOCK = pygame.time.Clock()
@@ -66,26 +66,29 @@ class GameState:
         self.player1Flapped = False # True when player flaps
         self.player2Flapped = False # True when player flaps
 
-    def frame_step(self, input_actions):
+    def frame_step(self, input_actions1, input_actions2):
         global itercount
         pygame.event.pump()
 
-        reward = 0.1
+        reward_1 = 0
+        reward_2 = 0
         terminal = False
 
-        if sum(input_actions) != 1:
+        if sum(input_actions1) != 1:
+            raise ValueError('Multiple input actions!')
+        if sum(input_actions2) != 1:
             raise ValueError('Multiple input actions!')
 
         # input_actions[0] == 1: do nothing 1
         # input_actions[1] == 1: flap bird 1
         # input_actions[2] == 1: do nothing 2
 	    # input_actions[3] == 1: flap bird 2
-        if input_actions[1] == 1:
+        if input_actions1[1] == 1:
             if self.player1y > -2 * PLAYER_HEIGHT:
                 self.player1VelY = self.playerFlapAcc
                 self.player1Flapped = True
                 #SOUNDS['wing'].play()
-        if input_actions[3] == 1:
+        if input_actions2[1] == 1:
             if self.player2y > -2 * PLAYER_HEIGHT:
                 self.player2VelY = self.playerFlapAcc
                 self.player2Flapped = True
@@ -98,7 +101,8 @@ class GameState:
             if pipeMidPos <= playerMidPos < pipeMidPos + 4:
                 self.score += 1
                 #SOUNDS['point'].play()
-                reward = 1
+                reward_1 = 1
+                reward_2 = 1
 
         # playerIndex basex change
         if (self.loopIter + 1) % 3 == 0:
@@ -142,9 +146,9 @@ class GameState:
 
         # check if crash here
         isCrash= checkCrash({'x': self.player1x, 'y': self.player1y,
-                             'index': self.playerIndex},
-			    {'x': self.player2x, 'y': self.player2y,
-			     'index': self.playerIndex},
+                                'index': self.playerIndex},
+			                {'x': self.player2x, 'y': self.player2y,
+			                     'index': self.playerIndex},
                             self.upperPipes, self.lowerPipes)
         if isCrash:
             itercount += 1
@@ -153,7 +157,8 @@ class GameState:
             terminal = True
             print "Crashed. Starting New Session. Iteration: " + str(itercount) + ", Score: " + str(self.score)
             self.__init__()
-            reward = -1
+            reward_1 = -1
+            reward_2 = -1
 
         # draw sprites
         SCREEN.blit(IMAGES['background'], (0,0))
@@ -175,7 +180,7 @@ class GameState:
             pygame.display.update()
         FPSCLOCK.tick(FPS)
         #print self.upperPipes[0]['y'] + PIPE_HEIGHT - int(BASEY * 0.2)
-        return image_data, reward, terminal
+        return image_data, reward_1, reward_2, terminal
 
 def getRandomPipe():
     """returns a randomly generated pipe"""
