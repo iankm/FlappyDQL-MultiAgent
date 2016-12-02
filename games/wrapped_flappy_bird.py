@@ -13,7 +13,7 @@ from itertools import cycle
 FPS = 10000
 SCREENWIDTH  = 288
 SCREENHEIGHT = 512
-DISPLAY = False
+DISPLAY = True
 
 pygame.init()
 FPSCLOCK = pygame.time.Clock()
@@ -76,15 +76,16 @@ class GameState:
         if sum(input_actions) != 1:
             raise ValueError('Multiple input actions!')
 
-        # input_actions[0] == 1: do nothing
+        # input_actions[0] == 1: do nothing 1
         # input_actions[1] == 1: flap bird 1
-	# input_actions[2] == 1: flap bird 2
+        # input_actions[2] == 1: do nothing 2
+	    # input_actions[3] == 1: flap bird 2
         if input_actions[1] == 1:
             if self.player1y > -2 * PLAYER_HEIGHT:
                 self.player1VelY = self.playerFlapAcc
                 self.player1Flapped = True
                 #SOUNDS['wing'].play()
-        if input_actions[2] == 1:
+        if input_actions[3] == 1:
             if self.player2y > -2 * PLAYER_HEIGHT:
                 self.player2VelY = self.playerFlapAcc
                 self.player2Flapped = True

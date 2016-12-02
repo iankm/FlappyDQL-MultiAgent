@@ -12,7 +12,7 @@ import numpy as np
 from collections import deque
 
 GAME = 'flappybird' # the name of the game being played for log files
-ACTIONS = 2 # number of valid actions
+ACTIONS = 4 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
 EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
