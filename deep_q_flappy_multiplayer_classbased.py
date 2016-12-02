@@ -17,7 +17,7 @@ GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
 EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
 FINAL_EPSILON = 0.001 # final value of epsilon 0.0001
-INITIAL_EPSILON = 0.01 # starting value of epsilon 0.0001
+INITIAL_EPSILON = 0.1 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
 BATCH = 32 # size of minibatch
 FRAME_PER_ACTION = 1
@@ -95,8 +95,6 @@ class DeepQNet:
         self.epsilon = INITIAL_EPSILON
         self.s_t = np.stack((x_0, x_0, x_0, x_0), axis=2) # "observation" = last 4 images
         self.t = 0 # time step
-        self.q_value = 0 # q value at current time
-        self.a_t = 0 # chosen action at the current time
         
         ### define cost function for each agent
         self.a = tf.placeholder("float", [None, self.actions]) # actions
@@ -118,10 +116,9 @@ class DeepQNet:
                 action_index = np.argmax(readout_t)
                 a_t[action_index] = 1
         else:
-            a_t[0] = 0 # do nothing
-        self.q_value = np.max(readout_t)
-        self.a_t = a_t
-        return self.a_t, self.q_value 
+            a_t[0] = 1 # do nothing
+        q_value = np.max(readout_t)
+        return a_t, q_value 
 
     def get_consequences(self, r_t, x_t1, a_t, terminal):
         s_t1 = np.append(x_t1, self.s_t[:, :, :3], axis=2)
@@ -145,7 +142,7 @@ class DeepQNet:
             s_j1_batch = [d[3] for d in minibatch]
 
             y_batch = []
-            readout_j1_batch = self.readout.eval(feed_dict = {s : s_j1_batch})
+            readout_j1_batch = self.readout.eval(feed_dict = {self.s : s_j1_batch})
             for i in range(0, len(minibatch)):
                 terminal = minibatch[i][4]
                 # if terminal, only equals reward
@@ -215,14 +212,14 @@ def trainNetworks(sess):
 
         ### run the selected action and observe next state and reward
         x_t1_colored, r_t_1, r_t_2, terminal = game_state.frame_step(a_t_1, a_t_2)
-        # print (r_t_1, r_t_2, terminal)
+        print (a_t_1, q_t_1, r_t_1, a_t_2, q_t_2, r_t_2, terminal)
         x_t1 = cv2.cvtColor(cv2.resize(x_t1_colored, (80, 80)), cv2.COLOR_BGR2GRAY)
         ret, x_t1 = cv2.threshold(x_t1, 1, 255, cv2.THRESH_BINARY)
         next_obs = np.reshape(x_t1, (80, 80, 1))
 
         ### incorporate environment's state and reward into each agents' losses
-        q_value_1 = q_learner1.get_consequences(r_t_1, next_obs, a_t_1, terminal)
-        q_value_2 = q_learner2.get_consequences(r_t_2, next_obs, a_t_2, terminal)
+        q_learner1.get_consequences(r_t_1, next_obs, a_t_1, terminal)
+        q_learner2.get_consequences(r_t_2, next_obs, a_t_2, terminal)
         
         t += 1
 

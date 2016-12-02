@@ -148,19 +148,26 @@ class GameState:
             self.lowerPipes.pop(0)
 
         # check if crash here
-        isCrash= checkCrash({'x': self.player1x, 'y': self.player1y,
+        isCrash1 = checkCrash({'x': self.player1x, 'y': self.player1y,
                                 'index': self.playerIndex},
-			                {'x': self.player2x, 'y': self.player2y,
-			                     'index': self.playerIndex},
                             self.upperPipes, self.lowerPipes)
-        if isCrash:
+        isCrash2 = checkCrash({'x': self.player2x, 'y': self.player2y,
+                                 'index': self.playerIndex},
+                                 self.upperPipes, self.lowerPipes)
+        if (isCrash1 or isCrash2):
             itercount += 1
+            terminal = True
+        if isCrash1:
             #SOUNDS['hit'].play()
             #SOUNDS['die'].play()
-            terminal = True
-            print "Crashed. Starting New Session. Iteration: " + str(itercount) + ", Score: " + str(self.score)
+            print "Crashed Player 1. Starting New Session. Iteration: " + str(itercount) + ", Score: " + str(self.score)
             self.__init__()
             reward_1 = -1
+        if isCrash2:
+            #SOUNDS['hit'].play()
+            #SOUNDS['die'].play()
+            print "Crashed Player 2. Starting New Session. Iteration: " + str(itercount) + ", Score: " + str(self.score)
+            self.__init__()
             reward_2 = -1
 
         # draw sprites
@@ -216,23 +223,19 @@ def showScore(score):
         Xoffset += IMAGES['numbers'][digit].get_width()
 
 
-def checkCrash(player1, player2, upperPipes, lowerPipes):
+def checkCrash(player1, upperPipes, lowerPipes):
     """returns True if player collders with base or pipes."""
     pi = player1['index']
     player1['w'] = IMAGES['player1'][0].get_width()
     player1['h'] = IMAGES['player1'][0].get_height()
-    player2['w'] = IMAGES['player2'][0].get_width()
-    player2['h'] = IMAGES['player2'][0].get_height()
 
     # if player crashes into ground
-    if player1['y'] + player1['h'] >= BASEY - 1 or player2['y'] + player2['h'] >= BASEY - 1:
+    if player1['y'] + player1['h'] >= BASEY - 1:
         return True
     else:
 
         player1Rect = pygame.Rect(player1['x'], player1['y'],
                       player1['w'], player1['h'])
-        player2Rect = pygame.Rect(player2['x'], player2['y'],
-                      player2['w'], player2['h'])
 
         for uPipe, lPipe in zip(upperPipes, lowerPipes):
             # upper and lower pipe rects
@@ -241,16 +244,14 @@ def checkCrash(player1, player2, upperPipes, lowerPipes):
 
             # player and upper/lower pipe hitmasks
             p1HitMask = HITMASKS['player1'][pi]
-            p2HitMask = HITMASKS['player2'][pi]
             uHitmask = HITMASKS['pipe'][0]
             lHitmask = HITMASKS['pipe'][1]
 
             # if either bird collided with upipe or lpipe or other bird
-            uCollide = pixelCollision(player1Rect, uPipeRect, p1HitMask, uHitmask) or pixelCollision(player2Rect, uPipeRect, p2HitMask, uHitmask)
-            lCollide = pixelCollision(player1Rect, lPipeRect, p1HitMask, lHitmask) or pixelCollision(player2Rect, lPipeRect, p2HitMask, lHitmask)
-            playerCollide = pixelCollision(player1Rect, player2Rect, p1HitMask, p2HitMask)
+            uCollide = pixelCollision(player1Rect, uPipeRect, p1HitMask, uHitmask)
+            lCollide = pixelCollision(player1Rect, lPipeRect, p1HitMask, lHitmask)
 
-            if uCollide or lCollide or playerCollide:
+            if uCollide or lCollide:
                 return True
 
     return False
