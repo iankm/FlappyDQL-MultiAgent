@@ -17,7 +17,7 @@ GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
 EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
 FINAL_EPSILON = 0.001 # final value of epsilon 0.0001
-INITIAL_EPSILON = 0.1 # starting value of epsilon 0.0001
+INITIAL_EPSILON = 0.5 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
 BATCH = 32 # size of minibatch
 FRAME_PER_ACTION = 1
@@ -109,7 +109,7 @@ class DeepQNet:
         action_index = 0
         if self.t % FRAME_PER_ACTION == 0:
             if random.random() <= self.epsilon:
-                print('\t' + self.name + ': Random Action')
+                # print('\t' + self.name + ': Random Action')
                 action_index = random.randrange(self.actions)
                 a_t[action_index] = 1
             else:
@@ -158,9 +158,9 @@ class DeepQNet:
                 self.s : s_j_batch}
             )
 
-            # update the old values
-            self.s_t = s_t1
-            self.t += 1
+        # update the old values
+        self.s_t = s_t1
+        self.t += 1
 
 
 def trainNetworks(sess):
@@ -212,7 +212,7 @@ def trainNetworks(sess):
 
         ### run the selected action and observe next state and reward
         x_t1_colored, r_t_1, r_t_2, terminal = game_state.frame_step(a_t_1, a_t_2)
-        print (a_t_1, q_t_1, r_t_1, a_t_2, q_t_2, r_t_2, terminal)
+        # print (a_t_1, q_t_1, r_t_1, a_t_2, q_t_2, r_t_2, terminal)
         x_t1 = cv2.cvtColor(cv2.resize(x_t1_colored, (80, 80)), cv2.COLOR_BGR2GRAY)
         ret, x_t1 = cv2.threshold(x_t1, 1, 255, cv2.THRESH_BINARY)
         next_obs = np.reshape(x_t1, (80, 80, 1))
@@ -228,6 +228,7 @@ def trainNetworks(sess):
             print ('Frame Step: ' + str(t) + ' STATE: ' + str(state) \
                 + ' Q_MAX1: ' + str(q_t_1) + ' Q_MAX2: ' + str(q_t_2))
         if t % 10000 == 0:
+            print('saved networks!')
             saver.save(sess, 'saved_networks/' + GAME + '-multi_agent_dqn', global_step = t)
 
         # print info
