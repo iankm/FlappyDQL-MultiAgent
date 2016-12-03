@@ -17,7 +17,7 @@ GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
 EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
 FINAL_EPSILON = 0.001 # final value of epsilon 0.0001
-INITIAL_EPSILON = 0.1 # starting value of epsilon 0.0001
+INITIAL_EPSILON = 0.5 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
 BATCH = 32 # size of minibatch
 FRAME_PER_ACTION = 1
@@ -109,7 +109,7 @@ class DeepQNet:
         action_index = 0
         if self.t % FRAME_PER_ACTION == 0:
             if random.random() <= self.epsilon:
-                print('\t' + self.name + ': Random Action')
+                # print('\t' + self.name + ': Random Action')
                 action_index = random.randrange(self.actions)
                 a_t[action_index] = 1
             else:
@@ -122,7 +122,6 @@ class DeepQNet:
 
     def get_consequences(self, r_t, x_t1, a_t, terminal):
         s_t1 = np.append(x_t1, self.s_t[:, :, :3], axis=2)
-        print s_t1
         if self.epsilon > FINAL_EPSILON and self.t > OBSERVATION_STEPS:
             self.epsilon -= (INITIAL_EPSILON - FINAL_EPSILON) / EXPLORATION_STEPS
 
@@ -158,9 +157,9 @@ class DeepQNet:
                 self.s : s_j_batch}
             )
 
-            # update the old values
-            self.s_t = s_t1
-            self.t += 1
+        # update the old values
+        self.s_t = s_t1
+        self.t += 1
 
 
 def trainNetworks(sess):
@@ -210,7 +209,7 @@ def trainNetworks(sess):
 
         ### run the selected action and observe next state and reward
         x_t1_colored, r_t, terminal = game_state.frame_step(a_t)
-        print (a_t, q_t, r_t, terminal)
+        # print (a_t, q_t, r_t, terminal)
         x_t1 = cv2.cvtColor(cv2.resize(x_t1_colored, (80, 80)), cv2.COLOR_BGR2GRAY)
         ret, x_t1 = cv2.threshold(x_t1, 1, 255, cv2.THRESH_BINARY)
         next_obs = np.reshape(x_t1, (80, 80, 1))
