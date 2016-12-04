@@ -8,9 +8,9 @@ def load():
             'assets/sprites/redbird-downflap.png'
     )
     PLAYER_PATH_2 = (
-            'assets/sprites/redbird-upflap.png',
-            'assets/sprites/redbird-midflap.png',
-            'assets/sprites/redbird-downflap.png'
+            'assets/sprites/bluebird-upflap.png',
+            'assets/sprites/bluebird-midflap.png',
+            'assets/sprites/bluebird-downflap.png'
     )
 
     # path of background
