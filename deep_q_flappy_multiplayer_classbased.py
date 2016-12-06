@@ -11,13 +11,13 @@ import random
 import numpy as np
 from collections import deque
 
-GAME = 'flappybird' # the name of the game being played for log files
+GAME = 'flappybird_twocolor_horizontal' # the name of the game being played for log files
 ACTIONS_PER_AGENT = 2 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
 EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
-FINAL_EPSILON = 0.001 # final value of epsilon 0.0001
-INITIAL_EPSILON = 0.5 # starting value of epsilon 0.0001
+FINAL_EPSILON = 0.0001 # final value of epsilon 0.0001
+INITIAL_EPSILON = 0.2 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
 BATCH = 32 # size of minibatch
 FRAME_PER_ACTION = 1
@@ -228,7 +228,7 @@ def trainNetworks(sess):
             print ('Frame Step: ' + str(t) + ' STATE: ' + str(state) \
                 + ' Q_MAX1: ' + str(q_t_1) + ' Q_MAX2: ' + str(q_t_2))
         if t % 10000 == 0:
-            print('saved networks!')
+            print('saved networks! to saved_networks/' + GAME + '-multi_agent_dqn')
             saver.save(sess, 'saved_networks/' + GAME + '-multi_agent_dqn', global_step = t)
 
         # print info

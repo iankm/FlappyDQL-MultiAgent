@@ -1,3 +1,7 @@
+# To login to acm VMs:
+ssh -i keys_tokens/corby_rosset_acm.pem ubuntu@128.220.70.227
+ubuntu 14.04
+
 # PyGamePlayer
 Module to help with running learning agents against PyGame games. Hooks into the PyGame screen update and event.get methods so you can run PyGame games with zero touches to the underlying game file. Can even deal with games with no main() method.
 

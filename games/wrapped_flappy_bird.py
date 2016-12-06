@@ -70,6 +70,7 @@ class GameState:
         global itercount
         pygame.event.pump()
 
+
         reward_1 = 0.1
         reward_2 = 0.1
         terminal = False
@@ -102,10 +103,10 @@ class GameState:
             if pipeMidPos <= playerMidPos1 < pipeMidPos + 4:
                 self.score += 1
                 #SOUNDS['point'].play()
-                reward_1 = 1
+                reward_1 = 0.5
             if pipeMidPos <= playerMidPos2 < pipeMidPos + 4:
                 self.score += 1
-                reward_2 = 1
+                reward_2 = 2
 
         # playerIndex basex change
         if (self.loopIter + 1) % 3 == 0:
