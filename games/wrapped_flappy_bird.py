@@ -8,7 +8,11 @@ import pygame
 import flappy_bird_utils
 import pygame.surfarray as surfarray
 from pygame.locals import *
+import pygame.display
 from itertools import cycle
+import os
+
+#os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 FPS = 10000
 SCREENWIDTH  = 288
@@ -16,6 +20,8 @@ SCREENHEIGHT = 512
 DISPLAY = False
 
 pygame.init()
+#pygame.display.init()
+
 FPSCLOCK = pygame.time.Clock()
 SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 pygame.display.set_caption('Flappy Bird')

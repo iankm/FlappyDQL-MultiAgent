@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from __future__ import print_function
+from __future__ import division
 
 import tensorflow as tf
 import cv2
@@ -21,9 +22,10 @@ INITIAL_EPSILON = 0.2 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
 BATCH = 32 # size of minibatch
 FRAME_PER_ACTION = 1
-LOAD_CHECKPOINTS = False
+LOAD_CHECKPOINTS = True
 OLD_CHECKPOINTS = False
 NUM_PLAYERS = 2
+num_steps_upon_load = 1840000
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.01)
@@ -92,9 +94,9 @@ class DeepQNet:
         self.readout = readout # output of Q-Net corresponds to Q values of each action
         self.last_layer = last_layer
         self.D = deque() # to store the action replays of the most recent state transitions
-        self.epsilon = INITIAL_EPSILON
+        self.epsilon = INITIAL_EPSILON - ((INITIAL_EPSILON - FINAL_EPSILON) * num_steps_upon_load/EXPLORATION_STEPS) 
         self.s_t = np.stack((x_0, x_0, x_0, x_0), axis=2) # "observation" = last 4 images
-        self.t = 0 # time step
+        self.t = num_steps_upon_load # time step
         
         ### define cost function for each agent
         self.a = tf.placeholder("float", [None, self.actions]) # actions
@@ -102,6 +104,8 @@ class DeepQNet:
         self.minibatch_actions = tf.reduce_sum(tf.mul(self.readout, self.a), reduction_indices=1) # predicted rewards for each action
         self.cost = tf.reduce_mean(tf.square(self.y - self.minibatch_actions))
         self.train_step = tf.train.AdamOptimizer(1e-6).minimize(self.cost)
+
+	print("initial epsilon: " + str(self.epsilon))
         
     def get_next_action(self):
         readout_t = self.readout.eval(feed_dict={self.s : [self.s_t]})[0]
@@ -123,7 +127,7 @@ class DeepQNet:
     def get_consequences(self, r_t, x_t1, a_t, terminal):
         s_t1 = np.append(x_t1, self.s_t[:, :, :3], axis=2)
 
-        if self.epsilon > FINAL_EPSILON and self.t > OBSERVATION_STEPS:
+        if self.epsilon > FINAL_EPSILON and self.t > (num_steps_upon_load + OBSERVATION_STEPS):
             self.epsilon -= (INITIAL_EPSILON - FINAL_EPSILON) / EXPLORATION_STEPS
 
         self.D.append((self.s_t, a_t, r_t, s_t1, terminal))
@@ -131,7 +135,11 @@ class DeepQNet:
             self.D.popleft()
 
         # only train if done observing
-        if self.t > OBSERVATION_STEPS:
+        if self.t > (OBSERVATION_STEPS + num_steps_upon_load):
+	    # inserted only to resume training from saved checkpoint with correct epsilon...
+	    #if self.t == OBSERVATION_STEPS + 1:
+	    #	self.t = num_steps_upon_load
+            #	self.epsilon = INITIAL_EPSILON - (INITIAL_EPSILON - FINAL_EPSILON) * num_steps_upon_load/ EXPLORATION_STEPS 
             # sample a minibatch to train on
             minibatch = random.sample(self.D, BATCH)
 
@@ -198,10 +206,11 @@ def trainNetworks(sess):
            saver.restore(sess, checkpoint.model_checkpoint_path)
            print("Successfully loaded:", checkpoint.model_checkpoint_path)
         else:
-           print("Could not find old network weights")
+           print("Error: Could not find old network weights")
+	   exit()
 
     # start training
-    t = 0
+    t = num_steps_upon_load
     while "flappy bird" != "donald trump":
         # choose an action epsilon greedily
         itercount = game.itercount # ask how many sessions we've played
@@ -226,16 +235,17 @@ def trainNetworks(sess):
         # save progress every 10000 iterations
         if t % 1000 == 0:
             print ('Frame Step: ' + str(t) + ' STATE: ' + str(state) \
-                + ' Q_MAX1: ' + str(q_t_1) + ' Q_MAX2: ' + str(q_t_2))
+                + ' Q_MAX1: ' + str(q_t_1) + ' Q_MAX2: ' + str(q_t_2) \
+		+ ' eps_1: ' + str(q_learner1.epsilon) + ' eps_2: ' + str(q_learner2.epsilon))
         if t % 10000 == 0:
             print('saved networks! to saved_networks/' + GAME + '-multi_agent_dqn')
             saver.save(sess, 'saved_networks/' + GAME + '-multi_agent_dqn', global_step = t)
 
         # print info
         state = ""
-        if t <= OBSERVATION_STEPS:
+        if t <= num_steps_upon_load + OBSERVATION_STEPS:
             state = "observe"
-        elif t > OBSERVATION_STEPS and t <= OBSERVATION_STEPS + EXPLORATION_STEPS:
+        elif t > num_steps_upon_load + OBSERVATION_STEPS and t <= num_steps_upon_load + OBSERVATION_STEPS + EXPLORATION_STEPS:
             state = "explore"
         else:
             state = "train"
