@@ -16471,3 +16471,1862 @@ Crashed Player 1. Starting New Session. Iteration: 1747, Score: 2
 KeyboardInterrupt
 ubuntu@rl:~/flappy_bird/ComputerVision$ exit
 exit
+
+ubuntu@rl:~/flappy_bird/ComputerVision$ python deep_q_flappy_p [K[Kmultiplayer_classbased.py 
+ALSA lib confmisc.c:768:(parse_card) cannot find card '0'
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1251:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM default
+initial epsilon: 0.016092
+initial epsilon: 0.016092
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:199 in trainNetworks.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Successfully loaded: saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-1840000
+Crashed Player 2. Starting New Session. Iteration: 1, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 2, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 3, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 4, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 5, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 6, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 7, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 7, Score: 0
+Frame Step: 1841000 STATE: observe Q_MAX1: 6.34125 Q_MAX2: 8.508 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 8, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 9, Score: 16
+Frame Step: 1842000 STATE: observe Q_MAX1: 6.59119 Q_MAX2: 7.77205 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 10, Score: 31
+Crashed Player 2. Starting New Session. Iteration: 11, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 12, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 13, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 14, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 15, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 16, Score: 0
+Frame Step: 1843000 STATE: observe Q_MAX1: 5.5986 Q_MAX2: 7.89211 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 17, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 18, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 19, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 20, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 21, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 22, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 23, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 24, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 25, Score: 5
+Frame Step: 1844000 STATE: observe Q_MAX1: 6.69897 Q_MAX2: 8.38528 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 26, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 27, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 27, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 28, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 29, Score: 16
+Frame Step: 1845000 STATE: observe Q_MAX1: 5.56854 Q_MAX2: 8.68073 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 30, Score: 17
+Crashed Player 1. Starting New Session. Iteration: 31, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 32, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 33, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 34, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 35, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 36, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 37, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 38, Score: 5
+Frame Step: 1846000 STATE: observe Q_MAX1: 4.83507 Q_MAX2: 4.77757 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 39, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 40, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 41, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 42, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 43, Score: 0
+Frame Step: 1847000 STATE: observe Q_MAX1: 4.66964 Q_MAX2: 6.05521 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 44, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 45, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 46, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 47, Score: 4
+Frame Step: 1848000 STATE: observe Q_MAX1: 5.36139 Q_MAX2: 6.66225 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 48, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 49, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 50, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 51, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 52, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 53, Score: 2
+Frame Step: 1849000 STATE: observe Q_MAX1: 6.86594 Q_MAX2: 8.00524 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 54, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 55, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 56, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 57, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 58, Score: 5
+Frame Step: 1850000 STATE: observe Q_MAX1: 6.41967 Q_MAX2: 6.75308 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 59, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 60, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 61, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 62, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 63, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 64, Score: 4
+Frame Step: 1851000 STATE: observe Q_MAX1: 7.26868 Q_MAX2: 9.19492 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 65, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 66, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 67, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 68, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 69, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 70, Score: 3
+Frame Step: 1852000 STATE: observe Q_MAX1: 6.88828 Q_MAX2: 10.0025 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 71, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 72, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 73, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 74, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 75, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 76, Score: 3
+Frame Step: 1853000 STATE: observe Q_MAX1: 6.77935 Q_MAX2: 6.71647 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 77, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 78, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 79, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 80, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 81, Score: 19
+Frame Step: 1854000 STATE: observe Q_MAX1: 6.55443 Q_MAX2: 8.28533 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 82, Score: 27
+Crashed Player 1. Starting New Session. Iteration: 83, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 84, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 85, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 86, Score: 10
+Frame Step: 1855000 STATE: observe Q_MAX1: 7.18718 Q_MAX2: 9.11949 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 87, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 88, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 89, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 90, Score: 24
+Frame Step: 1856000 STATE: observe Q_MAX1: 6.15049 Q_MAX2: 7.25178 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 91, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 92, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 93, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 94, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 95, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 96, Score: 1
+Frame Step: 1857000 STATE: observe Q_MAX1: 5.46498 Q_MAX2: 7.45897 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 97, Score: 19
+Crashed Player 2. Starting New Session. Iteration: 98, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 99, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 100, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 101, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 102, Score: 1
+Frame Step: 1858000 STATE: observe Q_MAX1: 7.34191 Q_MAX2: 8.22996 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 103, Score: 35
+Crashed Player 2. Starting New Session. Iteration: 104, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 105, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 106, Score: 0
+Frame Step: 1859000 STATE: observe Q_MAX1: 7.72925 Q_MAX2: 9.50255 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 107, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 108, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 109, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 110, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 111, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 112, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 113, Score: 11
+Frame Step: 1860000 STATE: observe Q_MAX1: 7.23891 Q_MAX2: 7.73548 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 114, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 115, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 116, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 117, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 118, Score: 14
+Frame Step: 1861000 STATE: observe Q_MAX1: 6.34355 Q_MAX2: 7.96733 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 119, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 120, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 121, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 122, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 123, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 124, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 125, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 126, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 127, Score: 5
+Frame Step: 1862000 STATE: observe Q_MAX1: 7.47803 Q_MAX2: 8.44404 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 128, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 129, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 130, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 131, Score: 25
+Frame Step: 1863000 STATE: observe Q_MAX1: 6.71364 Q_MAX2: 7.54805 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 132, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 133, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 134, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 135, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 136, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 137, Score: 12
+Frame Step: 1864000 STATE: observe Q_MAX1: 5.73168 Q_MAX2: 7.51681 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 138, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 139, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 140, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 141, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 142, Score: 1
+Frame Step: 1865000 STATE: observe Q_MAX1: 7.26311 Q_MAX2: 9.46577 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 143, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 144, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 145, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 146, Score: 4
+Frame Step: 1866000 STATE: observe Q_MAX1: 7.37075 Q_MAX2: 10.0933 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 147, Score: 19
+Crashed Player 2. Starting New Session. Iteration: 148, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 149, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 150, Score: 19
+Crashed Player 2. Starting New Session. Iteration: 151, Score: 1
+Frame Step: 1867000 STATE: observe Q_MAX1: 6.80666 Q_MAX2: 9.419 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 152, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 153, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 154, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 155, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 156, Score: 11
+Frame Step: 1868000 STATE: observe Q_MAX1: 6.76167 Q_MAX2: 8.55323 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 157, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 158, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 159, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 160, Score: 27
+Crashed Player 2. Starting New Session. Iteration: 161, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 162, Score: 0
+Frame Step: 1869000 STATE: observe Q_MAX1: 6.05547 Q_MAX2: 6.11464 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 163, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 164, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 165, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 166, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 167, Score: 14
+Frame Step: 1870000 STATE: observe Q_MAX1: 6.75541 Q_MAX2: 7.73024 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 168, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 169, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 170, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 171, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 172, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 173, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 174, Score: 4
+Frame Step: 1871000 STATE: observe Q_MAX1: 6.71194 Q_MAX2: 7.98907 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 175, Score: 26
+Crashed Player 2. Starting New Session. Iteration: 176, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 177, Score: 13
+Frame Step: 1872000 STATE: observe Q_MAX1: -0.517688 Q_MAX2: -2.08091 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 178, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 179, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 180, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 181, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 182, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 183, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 184, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 185, Score: 4
+Frame Step: 1873000 STATE: observe Q_MAX1: 6.72896 Q_MAX2: 7.89724 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 186, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 187, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 188, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 189, Score: 22
+Frame Step: 1874000 STATE: observe Q_MAX1: 5.65408 Q_MAX2: 6.33846 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 190, Score: 17
+Crashed Player 1. Starting New Session. Iteration: 191, Score: 37
+Crashed Player 1. Starting New Session. Iteration: 192, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 193, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 194, Score: 4
+Frame Step: 1875000 STATE: observe Q_MAX1: -1.26439 Q_MAX2: -0.611475 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 195, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 196, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 197, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 198, Score: 12
+Frame Step: 1876000 STATE: observe Q_MAX1: 6.62015 Q_MAX2: 6.09987 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 199, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 200, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 201, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 202, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 203, Score: 30
+Crashed Player 1. Starting New Session. Iteration: 204, Score: 0
+Frame Step: 1877000 STATE: observe Q_MAX1: 7.17066 Q_MAX2: 7.58698 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 205, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 206, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 207, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 208, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 209, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 210, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 211, Score: 0
+Frame Step: 1878000 STATE: observe Q_MAX1: 5.70933 Q_MAX2: 8.11621 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 212, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 213, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 214, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 215, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 216, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 217, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 218, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 219, Score: 4
+Frame Step: 1879000 STATE: observe Q_MAX1: 6.70251 Q_MAX2: 7.37811 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 220, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 221, Score: 20
+Crashed Player 2. Starting New Session. Iteration: 222, Score: 5
+Frame Step: 1880000 STATE: observe Q_MAX1: 6.34668 Q_MAX2: 7.00807 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 223, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 224, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 225, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 226, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 227, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 228, Score: 5
+Frame Step: 1881000 STATE: observe Q_MAX1: 6.88074 Q_MAX2: 8.20699 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 229, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 230, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 231, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 232, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 233, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 234, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 235, Score: 10
+Frame Step: 1882000 STATE: observe Q_MAX1: 6.01416 Q_MAX2: 7.34819 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 236, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 237, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 238, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 239, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 240, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 241, Score: 18
+Frame Step: 1883000 STATE: observe Q_MAX1: 7.86521 Q_MAX2: 8.70905 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 242, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 243, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 244, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 245, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 246, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 247, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 248, Score: 2
+Frame Step: 1884000 STATE: observe Q_MAX1: 6.58734 Q_MAX2: 7.93159 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 249, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 250, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 251, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 252, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 253, Score: 20
+Frame Step: 1885000 STATE: observe Q_MAX1: 6.94175 Q_MAX2: 9.85374 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 254, Score: 26
+Crashed Player 2. Starting New Session. Iteration: 255, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 256, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 257, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 258, Score: 16
+Frame Step: 1886000 STATE: observe Q_MAX1: 7.70597 Q_MAX2: 8.78221 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 259, Score: 12
+Frame Step: 1887000 STATE: observe Q_MAX1: 6.66828 Q_MAX2: 8.55514 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 260, Score: 41
+Crashed Player 2. Starting New Session. Iteration: 261, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 262, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 263, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 264, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 265, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 266, Score: 7
+Frame Step: 1888000 STATE: observe Q_MAX1: 6.56313 Q_MAX2: 8.327 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 267, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 268, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 269, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 270, Score: 9
+Frame Step: 1889000 STATE: observe Q_MAX1: 6.44553 Q_MAX2: 8.80662 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 271, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 272, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 272, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 273, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 274, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 275, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 276, Score: 4
+Frame Step: 1890000 STATE: observe Q_MAX1: 7.05836 Q_MAX2: 9.28252 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 277, Score: 40
+Crashed Player 1. Starting New Session. Iteration: 278, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 279, Score: 10
+Frame Step: 1891000 STATE: observe Q_MAX1: 2.74466 Q_MAX2: 2.62753 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 280, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 281, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 282, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 283, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 284, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 285, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 286, Score: 4
+Frame Step: 1892000 STATE: observe Q_MAX1: 7.86897 Q_MAX2: 9.11427 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 287, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 288, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 289, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 290, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 291, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 292, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 293, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 294, Score: 3
+Frame Step: 1893000 STATE: observe Q_MAX1: 5.34392 Q_MAX2: 6.58245 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 295, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 296, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 297, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 298, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 299, Score: 10
+Frame Step: 1894000 STATE: observe Q_MAX1: 5.81349 Q_MAX2: 8.20992 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 300, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 301, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 302, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 303, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 304, Score: 2
+Frame Step: 1895000 STATE: observe Q_MAX1: 5.67126 Q_MAX2: 7.30236 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 305, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 306, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 307, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 308, Score: 24
+Frame Step: 1896000 STATE: observe Q_MAX1: 7.55558 Q_MAX2: 9.18808 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 309, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 310, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 311, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 312, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 313, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 314, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 315, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 316, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 317, Score: 4
+Frame Step: 1897000 STATE: observe Q_MAX1: 6.90386 Q_MAX2: 8.26445 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 318, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 319, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 320, Score: 0
+Frame Step: 1898000 STATE: observe Q_MAX1: 5.67444 Q_MAX2: 5.7045 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 321, Score: 17
+Crashed Player 1. Starting New Session. Iteration: 322, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 323, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 324, Score: 30
+Crashed Player 1. Starting New Session. Iteration: 325, Score: 7
+Frame Step: 1899000 STATE: observe Q_MAX1: 7.34626 Q_MAX2: 8.82168 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 326, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 327, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 328, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 329, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 329, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 330, Score: 5
+Frame Step: 1900000 STATE: observe Q_MAX1: 7.18662 Q_MAX2: 8.7365 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 331, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 332, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 333, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 334, Score: 1
+Frame Step: 1901000 STATE: observe Q_MAX1: 8.37285 Q_MAX2: 7.94164 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 335, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 336, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 337, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 338, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 339, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 340, Score: 5
+Frame Step: 1902000 STATE: observe Q_MAX1: 6.07241 Q_MAX2: 8.27276 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 341, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 342, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 343, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 344, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 345, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 346, Score: 28
+Frame Step: 1903000 STATE: observe Q_MAX1: 6.62097 Q_MAX2: 7.78412 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 347, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 348, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 349, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 350, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 351, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 352, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 352, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 353, Score: 10
+Frame Step: 1904000 STATE: observe Q_MAX1: 7.07742 Q_MAX2: 8.21665 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 354, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 355, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 356, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 357, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 358, Score: 2
+Frame Step: 1905000 STATE: observe Q_MAX1: 5.65269 Q_MAX2: 7.6623 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 359, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 360, Score: 0
+Frame Step: 1906000 STATE: observe Q_MAX1: 6.35811 Q_MAX2: 8.40285 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 361, Score: 38
+Crashed Player 1. Starting New Session. Iteration: 362, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 363, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 364, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 365, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 366, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 367, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 368, Score: 0
+Frame Step: 1907000 STATE: observe Q_MAX1: 6.12005 Q_MAX2: 6.79801 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 369, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 370, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 371, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 372, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 373, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 374, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 375, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 376, Score: 1
+Frame Step: 1908000 STATE: observe Q_MAX1: 6.20594 Q_MAX2: 7.83753 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 377, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 378, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 379, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 380, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 381, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 382, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 383, Score: 15
+Frame Step: 1909000 STATE: observe Q_MAX1: 7.57544 Q_MAX2: 8.85624 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 384, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 385, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 386, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 387, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 388, Score: 2
+Frame Step: 1910000 STATE: observe Q_MAX1: 7.36564 Q_MAX2: 8.28503 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 389, Score: 21
+Crashed Player 1. Starting New Session. Iteration: 390, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 391, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 392, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 393, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 394, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 395, Score: 1
+Frame Step: 1911000 STATE: observe Q_MAX1: 7.8518 Q_MAX2: 8.92788 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 396, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 397, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 398, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 399, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 400, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 401, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 402, Score: 9
+Frame Step: 1912000 STATE: observe Q_MAX1: 5.5589 Q_MAX2: 6.29715 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 403, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 404, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 405, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 406, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 407, Score: 3
+Frame Step: 1913000 STATE: observe Q_MAX1: 7.05977 Q_MAX2: 8.35894 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 408, Score: 19
+Crashed Player 1. Starting New Session. Iteration: 409, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 410, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 411, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 412, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 413, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 414, Score: 5
+Frame Step: 1914000 STATE: observe Q_MAX1: 6.38283 Q_MAX2: 9.36129 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 415, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 416, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 417, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 418, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 419, Score: 0
+Frame Step: 1915000 STATE: observe Q_MAX1: 6.66073 Q_MAX2: 6.95753 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 420, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 421, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 422, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 423, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 424, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 425, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 426, Score: 1
+Frame Step: 1916000 STATE: observe Q_MAX1: 6.71828 Q_MAX2: 7.45977 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 427, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 428, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 429, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 430, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 431, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 432, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 433, Score: 8
+Frame Step: 1917000 STATE: observe Q_MAX1: 7.16018 Q_MAX2: 7.68042 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 434, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 435, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 436, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 437, Score: 34
+Crashed Player 1. Starting New Session. Iteration: 438, Score: 5
+Frame Step: 1918000 STATE: observe Q_MAX1: 6.89358 Q_MAX2: 8.46297 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 439, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 440, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 441, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 442, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 443, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 444, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 445, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 446, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 447, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 448, Score: 4
+Frame Step: 1919000 STATE: observe Q_MAX1: 7.30117 Q_MAX2: 8.13881 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 449, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 450, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 451, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 452, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 453, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 454, Score: 8
+Frame Step: 1920000 STATE: observe Q_MAX1: 6.45962 Q_MAX2: 7.96555 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 455, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 456, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 457, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 458, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 459, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 460, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 461, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 462, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 463, Score: 7
+Frame Step: 1921000 STATE: observe Q_MAX1: 5.56565 Q_MAX2: 6.53888 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 464, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 465, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 466, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 467, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 468, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 469, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 470, Score: 12
+Frame Step: 1922000 STATE: observe Q_MAX1: 7.54033 Q_MAX2: 8.62821 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 471, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 472, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 473, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 474, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 475, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 476, Score: 5
+Frame Step: 1923000 STATE: observe Q_MAX1: 7.31839 Q_MAX2: 9.05112 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 477, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 478, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 479, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 480, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 481, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 482, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 483, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 484, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 485, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 486, Score: 7
+Frame Step: 1924000 STATE: observe Q_MAX1: 7.64812 Q_MAX2: 8.80608 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 487, Score: 33
+Crashed Player 2. Starting New Session. Iteration: 488, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 489, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 490, Score: 0
+Frame Step: 1925000 STATE: observe Q_MAX1: 7.28762 Q_MAX2: 8.93891 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 491, Score: 29
+Crashed Player 1. Starting New Session. Iteration: 492, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 493, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 494, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 495, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 496, Score: 4
+Frame Step: 1926000 STATE: observe Q_MAX1: 7.88986 Q_MAX2: 8.59649 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 497, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 498, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 499, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 500, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 501, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 502, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 503, Score: 7
+Frame Step: 1927000 STATE: observe Q_MAX1: 6.53175 Q_MAX2: 7.25797 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 504, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 505, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 506, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 507, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 508, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 509, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 510, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 511, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 512, Score: 0
+Frame Step: 1928000 STATE: observe Q_MAX1: 5.25405 Q_MAX2: 5.68638 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 513, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 514, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 515, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 516, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 517, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 518, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 519, Score: 2
+Frame Step: 1929000 STATE: observe Q_MAX1: 7.12984 Q_MAX2: 7.45768 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 520, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 521, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 522, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 523, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 524, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 525, Score: 1
+Frame Step: 1930000 STATE: observe Q_MAX1: 8.11343 Q_MAX2: 9.19579 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 526, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 527, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 528, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 529, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 530, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 531, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 532, Score: 6
+Frame Step: 1931000 STATE: observe Q_MAX1: 6.56555 Q_MAX2: 7.57064 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 533, Score: 19
+Crashed Player 1. Starting New Session. Iteration: 534, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 535, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 536, Score: 2
+Frame Step: 1932000 STATE: observe Q_MAX1: 7.20632 Q_MAX2: 7.53512 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 537, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 538, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 539, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 540, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 541, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 542, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 543, Score: 14
+Frame Step: 1933000 STATE: observe Q_MAX1: 7.70204 Q_MAX2: 10.821 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 544, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 545, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 546, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 547, Score: 20
+Crashed Player 2. Starting New Session. Iteration: 548, Score: 17
+Frame Step: 1934000 STATE: observe Q_MAX1: 6.93492 Q_MAX2: 8.92828 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 549, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 550, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 551, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 552, Score: 0
+Frame Step: 1935000 STATE: observe Q_MAX1: 7.63106 Q_MAX2: 9.97046 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 553, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 554, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 555, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 556, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 557, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 558, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 559, Score: 8
+Frame Step: 1936000 STATE: observe Q_MAX1: 6.89568 Q_MAX2: 6.95114 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 560, Score: 44
+Crashed Player 1. Starting New Session. Iteration: 561, Score: 19
+Crashed Player 1. Starting New Session. Iteration: 562, Score: 4
+Frame Step: 1937000 STATE: observe Q_MAX1: 6.55151 Q_MAX2: 6.89769 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 563, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 564, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 565, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 566, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 567, Score: 13
+Frame Step: 1938000 STATE: observe Q_MAX1: 6.52698 Q_MAX2: 8.47838 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 2. Starting New Session. Iteration: 568, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 569, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 570, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 571, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 572, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 573, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 574, Score: 0
+Frame Step: 1939000 STATE: observe Q_MAX1: 5.85603 Q_MAX2: 6.05854 eps_1: 0.016092 eps_2: 0.016092
+Crashed Player 1. Starting New Session. Iteration: 575, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 576, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 577, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 578, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 579, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 580, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 581, Score: 3
+Frame Step: 1940000 STATE: observe Q_MAX1: 7.17585 Q_MAX2: 7.73203 eps_1: 0.016092 eps_2: 0.016092
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 582, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 583, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 584, Score: 18
+Frame Step: 1941000 STATE: explore Q_MAX1: 7.98287 Q_MAX2: 9.13575 eps_1: 0.01599214995 eps_2: 0.01599214995
+Crashed Player 1. Starting New Session. Iteration: 585, Score: 23
+Crashed Player 2. Starting New Session. Iteration: 586, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 587, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 588, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 589, Score: 2
+Frame Step: 1942000 STATE: explore Q_MAX1: 7.21157 Q_MAX2: 9.43507 eps_1: 0.01589219995 eps_2: 0.01589219995
+Crashed Player 2. Starting New Session. Iteration: 590, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 591, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 592, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 593, Score: 14
+Frame Step: 1943000 STATE: explore Q_MAX1: 7.42203 Q_MAX2: 7.87803 eps_1: 0.01579224995 eps_2: 0.01579224995
+Crashed Player 1. Starting New Session. Iteration: 594, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 595, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 596, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 597, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 598, Score: 20
+Frame Step: 1944000 STATE: explore Q_MAX1: 8.40036 Q_MAX2: 9.63946 eps_1: 0.01569229995 eps_2: 0.01569229995
+Crashed Player 1. Starting New Session. Iteration: 599, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 600, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 601, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 602, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 603, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 604, Score: 18
+Frame Step: 1945000 STATE: explore Q_MAX1: 7.93243 Q_MAX2: 11.9068 eps_1: 0.01559234995 eps_2: 0.01559234995
+Crashed Player 2. Starting New Session. Iteration: 605, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 606, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 607, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 608, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 609, Score: 7
+Frame Step: 1946000 STATE: explore Q_MAX1: 6.87263 Q_MAX2: 8.20929 eps_1: 0.01549239995 eps_2: 0.01549239995
+Crashed Player 1. Starting New Session. Iteration: 610, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 611, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 612, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 613, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 614, Score: 12
+Frame Step: 1947000 STATE: explore Q_MAX1: 7.37719 Q_MAX2: 7.20225 eps_1: 0.01539244995 eps_2: 0.01539244995
+Crashed Player 2. Starting New Session. Iteration: 615, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 616, Score: 20
+Frame Step: 1948000 STATE: explore Q_MAX1: 8.3177 Q_MAX2: 9.90286 eps_1: 0.01529249995 eps_2: 0.01529249995
+Crashed Player 1. Starting New Session. Iteration: 617, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 618, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 619, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 620, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 621, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 622, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 623, Score: 11
+Frame Step: 1949000 STATE: explore Q_MAX1: 8.62586 Q_MAX2: 12.741 eps_1: 0.01519254995 eps_2: 0.01519254995
+Crashed Player 2. Starting New Session. Iteration: 624, Score: 18
+Frame Step: 1950000 STATE: explore Q_MAX1: 7.807 Q_MAX2: 10.9639 eps_1: 0.01509259995 eps_2: 0.01509259995
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 625, Score: 48
+Crashed Player 1. Starting New Session. Iteration: 626, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 627, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 628, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 629, Score: 0
+Frame Step: 1951000 STATE: explore Q_MAX1: 8.97703 Q_MAX2: 12.3904 eps_1: 0.01499264995 eps_2: 0.01499264995
+Crashed Player 2. Starting New Session. Iteration: 630, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 631, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 632, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 633, Score: 2
+Frame Step: 1952000 STATE: explore Q_MAX1: 7.78144 Q_MAX2: 10.4461 eps_1: 0.01489269995 eps_2: 0.01489269995
+Crashed Player 1. Starting New Session. Iteration: 634, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 635, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 636, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 637, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 638, Score: 5
+Frame Step: 1953000 STATE: explore Q_MAX1: 8.78529 Q_MAX2: 9.16171 eps_1: 0.01479274995 eps_2: 0.01479274995
+Crashed Player 2. Starting New Session. Iteration: 639, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 640, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 641, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 642, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 643, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 644, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 645, Score: 3
+Frame Step: 1954000 STATE: explore Q_MAX1: 6.51088 Q_MAX2: 7.27099 eps_1: 0.01469279995 eps_2: 0.01469279995
+Crashed Player 1. Starting New Session. Iteration: 646, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 647, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 648, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 649, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 650, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 651, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 652, Score: 18
+Frame Step: 1955000 STATE: explore Q_MAX1: 7.8149 Q_MAX2: 8.48568 eps_1: 0.01459284995 eps_2: 0.01459284995
+Crashed Player 1. Starting New Session. Iteration: 653, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 654, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 655, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 656, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 657, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 658, Score: 1
+Frame Step: 1956000 STATE: explore Q_MAX1: 7.67398 Q_MAX2: 10.8218 eps_1: 0.01449289995 eps_2: 0.01449289995
+Crashed Player 1. Starting New Session. Iteration: 659, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 660, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 661, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 662, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 663, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 664, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 665, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 666, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 667, Score: 4
+Frame Step: 1957000 STATE: explore Q_MAX1: 7.80258 Q_MAX2: 7.42402 eps_1: 0.01439294995 eps_2: 0.01439294995
+Crashed Player 2. Starting New Session. Iteration: 668, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 669, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 670, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 671, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 672, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 673, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 674, Score: 1
+Frame Step: 1958000 STATE: explore Q_MAX1: 4.57985 Q_MAX2: 5.29314 eps_1: 0.01429299995 eps_2: 0.01429299995
+Crashed Player 1. Starting New Session. Iteration: 675, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 676, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 677, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 678, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 679, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 680, Score: 9
+Frame Step: 1959000 STATE: explore Q_MAX1: 8.09964 Q_MAX2: 8.85309 eps_1: 0.01419304995 eps_2: 0.01419304995
+Crashed Player 1. Starting New Session. Iteration: 681, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 682, Score: 23
+Crashed Player 1. Starting New Session. Iteration: 683, Score: 6
+Frame Step: 1960000 STATE: explore Q_MAX1: 8.14551 Q_MAX2: 9.12428 eps_1: 0.01409309995 eps_2: 0.01409309995
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 684, Score: 25
+Crashed Player 1. Starting New Session. Iteration: 685, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 686, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 687, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 688, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 689, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 690, Score: 0
+Frame Step: 1961000 STATE: explore Q_MAX1: 6.96782 Q_MAX2: 9.28996 eps_1: 0.01399314995 eps_2: 0.01399314995
+Crashed Player 1. Starting New Session. Iteration: 691, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 692, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 693, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 694, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 695, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 696, Score: 0
+Frame Step: 1962000 STATE: explore Q_MAX1: 8.54141 Q_MAX2: 9.51912 eps_1: 0.01389319995 eps_2: 0.01389319995
+Crashed Player 2. Starting New Session. Iteration: 697, Score: 47
+Frame Step: 1963000 STATE: explore Q_MAX1: 7.76602 Q_MAX2: 9.01859 eps_1: 0.01379324995 eps_2: 0.01379324995
+Crashed Player 2. Starting New Session. Iteration: 698, Score: 32
+Crashed Player 2. Starting New Session. Iteration: 699, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 700, Score: 7
+Frame Step: 1964000 STATE: explore Q_MAX1: 8.00516 Q_MAX2: 11.797 eps_1: 0.01369329995 eps_2: 0.01369329995
+Crashed Player 2. Starting New Session. Iteration: 701, Score: 40
+Crashed Player 1. Starting New Session. Iteration: 702, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 703, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 704, Score: 8
+Frame Step: 1965000 STATE: explore Q_MAX1: 8.391 Q_MAX2: 9.91777 eps_1: 0.01359334995 eps_2: 0.01359334995
+Crashed Player 1. Starting New Session. Iteration: 705, Score: 27
+Crashed Player 2. Starting New Session. Iteration: 706, Score: 7
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server "localhost:10.0"
+      after 3408 requests (2716 known processed) with 0 events remaining.
+ubuntu@rl:~/flappy_bird/ComputerVision$ [Kubuntu@rl:~/flappy_bird/ComputerVision$ exit
+exit
+
+ubuntu@rl:~/flappy_bird/ComputerVision$ ls
+[0m[01;34massets[0m                                   [01;34mexamples[0m         [01;32mLICENSE[0m                           [01;32mpygame_player.py[0m  [01;34mtests[0m
+checkpoint                               [01;34mgames[0m            [01;34mlogs_flappybird[0m                   [01;32mREADME.md[0m
+deep_q_flappy_multiplayer_classbased.py  [01;34mgithub_networks[0m  output.txt                        [01;34msaved_networks[0m
+deep_q_flappy_player.py                  [01;32m__init__.py[0m      PyGamePlayer-master.textClipping  screenlog.0
+ubuntu@rl:~/flappy_bird/ComputerVision$ python deep_q_flappy_ml[Kultiplayer_classbased.py 
+ALSA lib confmisc.c:768:(parse_card) cannot find card '0'
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1251:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM default
+initial epsilon: 0.0134266666667
+initial epsilon: 0.0134266666667
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:199 in trainNetworks.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Successfully loaded: saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-1960000
+Crashed Player 1. Starting New Session. Iteration: 1, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 2, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 3, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 4, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 5, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 6, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 7, Score: 8
+Frame Step: 1961000 STATE: observe Q_MAX1: 8.36067 Q_MAX2: 10.3629 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 8, Score: 26
+Crashed Player 1. Starting New Session. Iteration: 9, Score: 12
+Frame Step: 1962000 STATE: observe Q_MAX1: 7.98417 Q_MAX2: 11.67 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 10, Score: 19
+Crashed Player 1. Starting New Session. Iteration: 11, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 12, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 13, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 14, Score: 5
+Frame Step: 1963000 STATE: observe Q_MAX1: 7.17789 Q_MAX2: 9.86822 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 15, Score: 32
+Crashed Player 2. Starting New Session. Iteration: 16, Score: 11
+Frame Step: 1964000 STATE: observe Q_MAX1: 8.04282 Q_MAX2: 10.7056 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 17, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 18, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 19, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 20, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 21, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 22, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 23, Score: 3
+Frame Step: 1965000 STATE: observe Q_MAX1: 8.87144 Q_MAX2: 10.933 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 24, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 25, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 26, Score: 16
+Frame Step: 1966000 STATE: observe Q_MAX1: 7.48878 Q_MAX2: 9.79946 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 27, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 28, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 29, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 30, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 31, Score: 6
+Frame Step: 1967000 STATE: observe Q_MAX1: 8.65848 Q_MAX2: 10.826 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 32, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 33, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 34, Score: 18
+Frame Step: 1968000 STATE: observe Q_MAX1: 7.58478 Q_MAX2: 8.94341 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 35, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 36, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 37, Score: 16
+Frame Step: 1969000 STATE: observe Q_MAX1: 8.56111 Q_MAX2: 11.0218 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 38, Score: 26
+Crashed Player 2. Starting New Session. Iteration: 39, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 40, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 41, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 42, Score: 0
+Frame Step: 1970000 STATE: observe Q_MAX1: 6.58601 Q_MAX2: 8.12166 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 43, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 44, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 45, Score: 0
+Frame Step: 1971000 STATE: observe Q_MAX1: 7.54936 Q_MAX2: 9.36609 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 46, Score: 77
+Frame Step: 1972000 STATE: observe Q_MAX1: 8.1709 Q_MAX2: 11.0147 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 47, Score: 23
+Crashed Player 1. Starting New Session. Iteration: 48, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 49, Score: 12
+Frame Step: 1973000 STATE: observe Q_MAX1: 7.69641 Q_MAX2: 9.64157 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 50, Score: 30
+Frame Step: 1974000 STATE: observe Q_MAX1: 8.06246 Q_MAX2: 11.1467 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 51, Score: 25
+Crashed Player 1. Starting New Session. Iteration: 52, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 53, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 54, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 55, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 56, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 57, Score: 8
+Frame Step: 1975000 STATE: observe Q_MAX1: 8.14752 Q_MAX2: 10.4574 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 58, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 59, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 60, Score: 22
+Frame Step: 1976000 STATE: observe Q_MAX1: 8.58604 Q_MAX2: 10.4637 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 61, Score: 37
+Crashed Player 2. Starting New Session. Iteration: 62, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 63, Score: 12
+Frame Step: 1977000 STATE: observe Q_MAX1: 7.97491 Q_MAX2: 9.9603 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 64, Score: 36
+Crashed Player 2. Starting New Session. Iteration: 65, Score: 15
+Frame Step: 1978000 STATE: observe Q_MAX1: 8.6425 Q_MAX2: 10.2462 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 66, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 67, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 68, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 69, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 70, Score: 9
+Frame Step: 1979000 STATE: observe Q_MAX1: 7.97045 Q_MAX2: 11.1869 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 71, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 72, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 73, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 74, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 75, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 76, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 77, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 78, Score: 0
+Frame Step: 1980000 STATE: observe Q_MAX1: 8.41282 Q_MAX2: 10.3408 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 79, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 80, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 81, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 82, Score: 0
+Frame Step: 1981000 STATE: observe Q_MAX1: 7.34101 Q_MAX2: 8.65007 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 83, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 84, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 85, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 86, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 87, Score: 16
+Frame Step: 1982000 STATE: observe Q_MAX1: 8.38542 Q_MAX2: 9.80947 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 88, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 89, Score: 7
+Frame Step: 1983000 STATE: observe Q_MAX1: 7.38726 Q_MAX2: 9.56447 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 90, Score: 56
+Crashed Player 2. Starting New Session. Iteration: 91, Score: 2
+Frame Step: 1984000 STATE: observe Q_MAX1: 6.55526 Q_MAX2: 8.46031 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 92, Score: 36
+Crashed Player 1. Starting New Session. Iteration: 93, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 94, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 95, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 96, Score: 2
+Frame Step: 1985000 STATE: observe Q_MAX1: 6.36015 Q_MAX2: 5.66808 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 97, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 98, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 99, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 100, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 101, Score: 0
+Frame Step: 1986000 STATE: observe Q_MAX1: 8.06389 Q_MAX2: 10.6948 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 102, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 103, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 103, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 104, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 104, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 105, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 106, Score: 12
+Frame Step: 1987000 STATE: observe Q_MAX1: 8.35407 Q_MAX2: 10.0865 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 107, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 108, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 109, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 110, Score: 19
+Frame Step: 1988000 STATE: observe Q_MAX1: 7.80393 Q_MAX2: 9.53394 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 111, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 112, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 113, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 114, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 115, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 116, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 117, Score: 5
+Frame Step: 1989000 STATE: observe Q_MAX1: 8.81853 Q_MAX2: 10.2841 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 118, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 119, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 120, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 121, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 122, Score: 6
+Frame Step: 1990000 STATE: observe Q_MAX1: 5.5842 Q_MAX2: 8.41774 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 123, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 124, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 125, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 126, Score: 20
+Crashed Player 2. Starting New Session. Iteration: 127, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 128, Score: 5
+Frame Step: 1991000 STATE: observe Q_MAX1: 8.10464 Q_MAX2: 9.95207 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 129, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 130, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 131, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 132, Score: 3
+Frame Step: 1992000 STATE: observe Q_MAX1: 7.03592 Q_MAX2: 10.4265 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 133, Score: 26
+Crashed Player 2. Starting New Session. Iteration: 134, Score: 23
+Crashed Player 2. Starting New Session. Iteration: 135, Score: 3
+Frame Step: 1993000 STATE: observe Q_MAX1: 8.73464 Q_MAX2: 10.2683 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 136, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 137, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 138, Score: 18
+Frame Step: 1994000 STATE: observe Q_MAX1: 6.78355 Q_MAX2: 9.35818 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 139, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 140, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 141, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 142, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 143, Score: 1
+Frame Step: 1995000 STATE: observe Q_MAX1: 7.42071 Q_MAX2: 10.2701 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 144, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 145, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 146, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 147, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 148, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 149, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 150, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 151, Score: 4
+Frame Step: 1996000 STATE: observe Q_MAX1: 7.27059 Q_MAX2: 9.02843 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 152, Score: 18
+Frame Step: 1997000 STATE: observe Q_MAX1: 7.23864 Q_MAX2: 9.12189 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 153, Score: 48
+Crashed Player 2. Starting New Session. Iteration: 154, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 155, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 156, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 157, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 158, Score: 11
+Frame Step: 1998000 STATE: observe Q_MAX1: 8.54455 Q_MAX2: 11.3292 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 159, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 160, Score: 36
+Crashed Player 1. Starting New Session. Iteration: 161, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 162, Score: 8
+Frame Step: 1999000 STATE: observe Q_MAX1: 7.83612 Q_MAX2: 8.72167 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 163, Score: 30
+Crashed Player 2. Starting New Session. Iteration: 164, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 165, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 166, Score: 5
+Frame Step: 2000000 STATE: observe Q_MAX1: 7.93017 Q_MAX2: 11.1374 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 167, Score: 23
+Crashed Player 1. Starting New Session. Iteration: 168, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 169, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 170, Score: 13
+Frame Step: 2001000 STATE: observe Q_MAX1: 8.84018 Q_MAX2: 10.7333 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 171, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 172, Score: 26
+Frame Step: 2002000 STATE: observe Q_MAX1: 8.89322 Q_MAX2: 11.1496 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 173, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 174, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 175, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 176, Score: 18
+Frame Step: 2003000 STATE: observe Q_MAX1: 8.48135 Q_MAX2: 10.8995 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 177, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 178, Score: 32
+Crashed Player 1. Starting New Session. Iteration: 179, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 180, Score: 7
+Frame Step: 2004000 STATE: observe Q_MAX1: 7.63518 Q_MAX2: 11.8065 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 181, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 182, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 183, Score: 11
+Frame Step: 2005000 STATE: observe Q_MAX1: 6.20531 Q_MAX2: 9.99291 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 184, Score: 38
+Crashed Player 2. Starting New Session. Iteration: 185, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 186, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 187, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 188, Score: 6
+Frame Step: 2006000 STATE: observe Q_MAX1: 8.48224 Q_MAX2: 10.1705 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 189, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 190, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 191, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 192, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 193, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 194, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 195, Score: 0
+Frame Step: 2007000 STATE: observe Q_MAX1: 6.64862 Q_MAX2: 10.2378 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 196, Score: 25
+Crashed Player 1. Starting New Session. Iteration: 197, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 198, Score: 2
+Frame Step: 2008000 STATE: observe Q_MAX1: 8.05278 Q_MAX2: 11.2263 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 199, Score: 30
+Crashed Player 1. Starting New Session. Iteration: 200, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 201, Score: 4
+Frame Step: 2009000 STATE: observe Q_MAX1: 6.91862 Q_MAX2: 9.5459 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 202, Score: 31
+Crashed Player 1. Starting New Session. Iteration: 203, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 204, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 205, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 206, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 207, Score: 15
+Frame Step: 2010000 STATE: observe Q_MAX1: 7.76184 Q_MAX2: 7.92926 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 208, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 209, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 210, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 211, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 212, Score: 7
+Frame Step: 2011000 STATE: observe Q_MAX1: 8.89628 Q_MAX2: 11.1683 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 213, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 214, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 215, Score: 12
+Frame Step: 2012000 STATE: observe Q_MAX1: 8.59045 Q_MAX2: 11.0235 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 216, Score: 34
+Crashed Player 1. Starting New Session. Iteration: 217, Score: 16
+Frame Step: 2013000 STATE: observe Q_MAX1: 8.44573 Q_MAX2: 11.0904 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 218, Score: 52
+Frame Step: 2014000 STATE: observe Q_MAX1: 8.10771 Q_MAX2: 10.0361 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 219, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 220, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 221, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 222, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 223, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 224, Score: 6
+Frame Step: 2015000 STATE: observe Q_MAX1: 8.64613 Q_MAX2: 12.1577 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 225, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 226, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 227, Score: 23
+Frame Step: 2016000 STATE: observe Q_MAX1: 8.94683 Q_MAX2: 10.6503 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 228, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 229, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 230, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 231, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 232, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 233, Score: 8
+Frame Step: 2017000 STATE: observe Q_MAX1: 7.632 Q_MAX2: 9.53391 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 234, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 235, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 236, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 237, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 238, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 239, Score: 1
+Frame Step: 2018000 STATE: observe Q_MAX1: 7.74472 Q_MAX2: 10.6302 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 240, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 241, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 242, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 243, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 244, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 245, Score: 12
+Frame Step: 2019000 STATE: observe Q_MAX1: 7.2504 Q_MAX2: 8.83201 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 246, Score: 28
+Crashed Player 1. Starting New Session. Iteration: 247, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 248, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 249, Score: 2
+Frame Step: 2020000 STATE: observe Q_MAX1: 7.60186 Q_MAX2: 9.72402 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 250, Score: 38
+Crashed Player 2. Starting New Session. Iteration: 251, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 252, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 253, Score: 0
+Frame Step: 2021000 STATE: observe Q_MAX1: 7.69992 Q_MAX2: 10.1044 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 254, Score: 54
+Crashed Player 2. Starting New Session. Iteration: 255, Score: 2
+Frame Step: 2022000 STATE: observe Q_MAX1: 9.04989 Q_MAX2: 9.70119 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 256, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 257, Score: 12
+Frame Step: 2023000 STATE: observe Q_MAX1: 8.02766 Q_MAX2: 11.9328 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 258, Score: 55
+Crashed Player 1. Starting New Session. Iteration: 259, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 260, Score: 16
+Frame Step: 2024000 STATE: observe Q_MAX1: 8.22131 Q_MAX2: 10.3618 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 261, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 262, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 263, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 264, Score: 18
+Frame Step: 2025000 STATE: observe Q_MAX1: 8.41555 Q_MAX2: 11.0117 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 265, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 266, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 267, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 268, Score: 2
+Frame Step: 2026000 STATE: observe Q_MAX1: 8.51095 Q_MAX2: 10.925 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 269, Score: 57
+Crashed Player 1. Starting New Session. Iteration: 270, Score: 5
+Frame Step: 2027000 STATE: observe Q_MAX1: 7.7654 Q_MAX2: 9.98989 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 271, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 272, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 273, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 274, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 275, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 276, Score: 3
+Frame Step: 2028000 STATE: observe Q_MAX1: 8.65034 Q_MAX2: 10.1072 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 277, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 278, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 279, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 280, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 281, Score: 12
+Frame Step: 2029000 STATE: observe Q_MAX1: 8.40938 Q_MAX2: 11.712 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 282, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 283, Score: 5
+Frame Step: 2030000 STATE: observe Q_MAX1: 8.14452 Q_MAX2: 10.1013 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 284, Score: 52
+Crashed Player 1. Starting New Session. Iteration: 285, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 286, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 287, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 288, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 289, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 290, Score: 6
+Frame Step: 2031000 STATE: observe Q_MAX1: 7.66253 Q_MAX2: 9.0443 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 291, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 292, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 293, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 294, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 294, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 295, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 296, Score: 0
+Frame Step: 2032000 STATE: observe Q_MAX1: 8.4325 Q_MAX2: 10.9561 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 297, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 298, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 299, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 300, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 301, Score: 0
+Frame Step: 2033000 STATE: observe Q_MAX1: 8.47518 Q_MAX2: 9.96947 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 302, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 303, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 304, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 305, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 306, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 307, Score: 14
+Frame Step: 2034000 STATE: observe Q_MAX1: 8.0124 Q_MAX2: 9.07979 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 308, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 309, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 310, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 311, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 312, Score: 3
+Frame Step: 2035000 STATE: observe Q_MAX1: 7.48652 Q_MAX2: 10.6262 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 313, Score: 12
+Crashed Player 1. Starting New Session. Iteration: 314, Score: 32
+Crashed Player 1. Starting New Session. Iteration: 315, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 316, Score: 4
+Frame Step: 2036000 STATE: observe Q_MAX1: 8.22469 Q_MAX2: 11.2945 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 317, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 318, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 319, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 320, Score: 13
+Frame Step: 2037000 STATE: observe Q_MAX1: 8.37958 Q_MAX2: 10.742 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 321, Score: 19
+Crashed Player 1. Starting New Session. Iteration: 322, Score: 15
+Frame Step: 2038000 STATE: observe Q_MAX1: 8.4899 Q_MAX2: 9.76144 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 323, Score: 23
+Crashed Player 2. Starting New Session. Iteration: 324, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 325, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 326, Score: 5
+Frame Step: 2039000 STATE: observe Q_MAX1: 7.84695 Q_MAX2: 11.0931 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 327, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 328, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 329, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 330, Score: 1
+Frame Step: 2040000 STATE: observe Q_MAX1: 8.90476 Q_MAX2: 10.892 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 331, Score: 30
+Crashed Player 2. Starting New Session. Iteration: 332, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 333, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 334, Score: 9
+Frame Step: 2041000 STATE: observe Q_MAX1: 8.44481 Q_MAX2: 10.0936 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 335, Score: 27
+Crashed Player 1. Starting New Session. Iteration: 336, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 337, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 338, Score: 24
+Frame Step: 2042000 STATE: observe Q_MAX1: 7.28825 Q_MAX2: 11.0433 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 339, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 340, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 341, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 342, Score: 23
+Crashed Player 2. Starting New Session. Iteration: 343, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 344, Score: 3
+Frame Step: 2043000 STATE: observe Q_MAX1: 7.87313 Q_MAX2: 10.1801 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 345, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 346, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 347, Score: 10
+Frame Step: 2044000 STATE: observe Q_MAX1: 7.23273 Q_MAX2: 8.38656 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 348, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 349, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 350, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 351, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 352, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 353, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 354, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 355, Score: 18
+Frame Step: 2045000 STATE: observe Q_MAX1: 8.55042 Q_MAX2: 10.8098 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 356, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 357, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 358, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 359, Score: 7
+Frame Step: 2046000 STATE: observe Q_MAX1: 8.59137 Q_MAX2: 10.8181 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 360, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 361, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 362, Score: 27
+Crashed Player 1. Starting New Session. Iteration: 363, Score: 8
+Frame Step: 2047000 STATE: observe Q_MAX1: 7.98995 Q_MAX2: 10.7681 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 364, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 365, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 366, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 367, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 368, Score: 11
+Frame Step: 2048000 STATE: observe Q_MAX1: 7.90013 Q_MAX2: 10.542 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 369, Score: 21
+Crashed Player 2. Starting New Session. Iteration: 370, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 371, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 372, Score: 9
+Frame Step: 2049000 STATE: observe Q_MAX1: 8.88933 Q_MAX2: 10.9362 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 373, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 374, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 375, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 376, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 377, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 378, Score: 4
+Frame Step: 2050000 STATE: observe Q_MAX1: 7.54574 Q_MAX2: 9.34199 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 379, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 380, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 381, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 382, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 383, Score: 4
+Frame Step: 2051000 STATE: observe Q_MAX1: 8.274 Q_MAX2: 10.1291 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 384, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 385, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 386, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 387, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 388, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 389, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 390, Score: 13
+Frame Step: 2052000 STATE: observe Q_MAX1: 7.25901 Q_MAX2: 8.11528 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 391, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 392, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 393, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 394, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 395, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 396, Score: 3
+Frame Step: 2053000 STATE: observe Q_MAX1: 7.5877 Q_MAX2: 9.18582 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Frame Step: 2054000 STATE: observe Q_MAX1: 7.55258 Q_MAX2: 9.8868 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 397, Score: 61
+Crashed Player 1. Starting New Session. Iteration: 398, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 399, Score: 36
+Frame Step: 2055000 STATE: observe Q_MAX1: 7.1152 Q_MAX2: 8.78337 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 400, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 401, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 402, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 403, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 404, Score: 4
+Frame Step: 2056000 STATE: observe Q_MAX1: 6.67302 Q_MAX2: 7.71681 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 405, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 406, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 407, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 408, Score: 18
+Frame Step: 2057000 STATE: observe Q_MAX1: 7.7418 Q_MAX2: 11.0989 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 2. Starting New Session. Iteration: 409, Score: 25
+Crashed Player 1. Starting New Session. Iteration: 410, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 411, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 412, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 413, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 414, Score: 0
+Frame Step: 2058000 STATE: observe Q_MAX1: 8.13354 Q_MAX2: 10.818 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 415, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 416, Score: 13
+Frame Step: 2059000 STATE: observe Q_MAX1: 8.59916 Q_MAX2: 11.8555 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+Crashed Player 1. Starting New Session. Iteration: 417, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 418, Score: 23
+Crashed Player 1. Starting New Session. Iteration: 419, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 420, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 420, Score: 0
+Frame Step: 2060000 STATE: observe Q_MAX1: 7.98751 Q_MAX2: 9.03909 eps_1: 0.0134266666667 eps_2: 0.0134266666667
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 421, Score: 42
+Crashed Player 2. Starting New Session. Iteration: 422, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 423, Score: 2
+Frame Step: 2061000 STATE: explore Q_MAX1: 8.6495 Q_MAX2: 11.6132 eps_1: 0.013331571381 eps_2: 0.013331571381
+Crashed Player 2. Starting New Session. Iteration: 424, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 425, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 426, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 427, Score: 10
+Crashed Player 1. Starting New Session. Iteration: 428, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 429, Score: 6
+Frame Step: 2062000 STATE: explore Q_MAX1: 8.2941 Q_MAX2: 9.79293 eps_1: 0.0132363809048 eps_2: 0.0132363809048
+Crashed Player 2. Starting New Session. Iteration: 430, Score: 22
+Frame Step: 2063000 STATE: explore Q_MAX1: 0.260722 Q_MAX2: 4.53113 eps_1: 0.0131411904286 eps_2: 0.0131411904286
+Crashed Player 1. Starting New Session. Iteration: 431, Score: 41
+Crashed Player 1. Starting New Session. Iteration: 432, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 433, Score: 15
+Crashed Player 2. Starting New Session. Iteration: 434, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 435, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 436, Score: 3
+Frame Step: 2064000 STATE: explore Q_MAX1: 8.79943 Q_MAX2: 11.596 eps_1: 0.0130459999524 eps_2: 0.0130459999524
+Crashed Player 2. Starting New Session. Iteration: 437, Score: 7
+Crashed Player 2. Starting New Session. Iteration: 438, Score: 29
+Crashed Player 1. Starting New Session. Iteration: 439, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 440, Score: 6
+Frame Step: 2065000 STATE: explore Q_MAX1: 8.92695 Q_MAX2: 11.026 eps_1: 0.0129508094762 eps_2: 0.0129508094762
+Crashed Player 2. Starting New Session. Iteration: 441, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 442, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 443, Score: 28
+Crashed Player 1. Starting New Session. Iteration: 444, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 445, Score: 2
+Frame Step: 2066000 STATE: explore Q_MAX1: 8.80558 Q_MAX2: 10.3859 eps_1: 0.012855619 eps_2: 0.012855619
+Crashed Player 1. Starting New Session. Iteration: 446, Score: 14
+Frame Step: 2067000 STATE: explore Q_MAX1: 8.78014 Q_MAX2: 9.60827 eps_1: 0.0127604285238 eps_2: 0.0127604285238
+Crashed Player 2. Starting New Session. Iteration: 447, Score: 49
+Crashed Player 2. Starting New Session. Iteration: 448, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 449, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 450, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 451, Score: 12
+Frame Step: 2068000 STATE: explore Q_MAX1: 8.76945 Q_MAX2: 9.84505 eps_1: 0.0126652380476 eps_2: 0.0126652380476
+Crashed Player 1. Starting New Session. Iteration: 452, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 453, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 454, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 455, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 456, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 457, Score: 2
+Frame Step: 2069000 STATE: explore Q_MAX1: 9.22591 Q_MAX2: 11.4352 eps_1: 0.0125700475714 eps_2: 0.0125700475714
+Crashed Player 2. Starting New Session. Iteration: 458, Score: 21
+Crashed Player 1. Starting New Session. Iteration: 459, Score: 30
+Crashed Player 2. Starting New Session. Iteration: 460, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 461, Score: 2
+Frame Step: 2070000 STATE: explore Q_MAX1: 9.77913 Q_MAX2: 11.4036 eps_1: 0.0124748570952 eps_2: 0.0124748570952
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 462, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 463, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 464, Score: 31
+Crashed Player 2. Starting New Session. Iteration: 465, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 466, Score: 2
+Frame Step: 2071000 STATE: explore Q_MAX1: 9.37434 Q_MAX2: 12.3775 eps_1: 0.012379666619 eps_2: 0.012379666619
+Crashed Player 1. Starting New Session. Iteration: 467, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 468, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 469, Score: 10
+Frame Step: 2072000 STATE: explore Q_MAX1: 4.50798 Q_MAX2: 7.96099 eps_1: 0.0122844761429 eps_2: 0.0122844761429
+Crashed Player 2. Starting New Session. Iteration: 470, Score: 33
+Crashed Player 1. Starting New Session. Iteration: 471, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 472, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 473, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 474, Score: 0
+Frame Step: 2073000 STATE: explore Q_MAX1: 7.35313 Q_MAX2: 12.2305 eps_1: 0.0121892856667 eps_2: 0.0121892856667
+Crashed Player 1. Starting New Session. Iteration: 475, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 476, Score: 27
+Crashed Player 1. Starting New Session. Iteration: 477, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 478, Score: 4
+Crashed Player 2. Starting New Session. Iteration: 479, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 480, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 481, Score: 3
+Frame Step: 2074000 STATE: explore Q_MAX1: 9.38585 Q_MAX2: 10.9368 eps_1: 0.0120940951905 eps_2: 0.0120940951905
+Crashed Player 1. Starting New Session. Iteration: 482, Score: 34
+Frame Step: 2075000 STATE: explore Q_MAX1: 8.20537 Q_MAX2: 11.4156 eps_1: 0.0119989047143 eps_2: 0.0119989047143
+Crashed Player 1. Starting New Session. Iteration: 483, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 484, Score: 30
+Frame Step: 2076000 STATE: explore Q_MAX1: 8.97096 Q_MAX2: 12.3485 eps_1: 0.0119037142381 eps_2: 0.0119037142381
+Crashed Player 2. Starting New Session. Iteration: 485, Score: 26
+Crashed Player 2. Starting New Session. Iteration: 486, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 487, Score: 23
+Frame Step: 2077000 STATE: explore Q_MAX1: 8.4516 Q_MAX2: 12.2898 eps_1: 0.0118085237619 eps_2: 0.0118085237619
+Crashed Player 2. Starting New Session. Iteration: 488, Score: 34
+Crashed Player 1. Starting New Session. Iteration: 489, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 490, Score: 0
+Frame Step: 2078000 STATE: explore Q_MAX1: 8.03759 Q_MAX2: 11.3316 eps_1: 0.0117133332857 eps_2: 0.0117133332857
+Crashed Player 1. Starting New Session. Iteration: 491, Score: 24
+Crashed Player 2. Starting New Session. Iteration: 492, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 493, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 494, Score: 9
+Frame Step: 2079000 STATE: explore Q_MAX1: -1.83749 Q_MAX2: -2.45372 eps_1: 0.0116181428095 eps_2: 0.0116181428095
+Crashed Player 2. Starting New Session. Iteration: 495, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 496, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 497, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 498, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 499, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 500, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 501, Score: 0
+Frame Step: 2080000 STATE: explore Q_MAX1: 6.33902 Q_MAX2: 10.0035 eps_1: 0.0115229523333 eps_2: 0.0115229523333
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 502, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 503, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 504, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 505, Score: 15
+Crashed Player 1. Starting New Session. Iteration: 506, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 507, Score: 15
+Frame Step: 2081000 STATE: explore Q_MAX1: 8.43986 Q_MAX2: 11.0011 eps_1: 0.0114277618571 eps_2: 0.0114277618571
+Crashed Player 2. Starting New Session. Iteration: 508, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 509, Score: 11
+Crashed Player 1. Starting New Session. Iteration: 510, Score: 4
+Frame Step: 2082000 STATE: explore Q_MAX1: 8.68806 Q_MAX2: 10.6131 eps_1: 0.0113325713809 eps_2: 0.0113325713809
+Crashed Player 2. Starting New Session. Iteration: 511, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 512, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 513, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 514, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 515, Score: 2
+Frame Step: 2083000 STATE: explore Q_MAX1: 8.51121 Q_MAX2: 10.5546 eps_1: 0.0112373809048 eps_2: 0.0112373809048
+Crashed Player 1. Starting New Session. Iteration: 516, Score: 34
+Crashed Player 2. Starting New Session. Iteration: 517, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 518, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 519, Score: 2
+Frame Step: 2084000 STATE: explore Q_MAX1: 8.20899 Q_MAX2: 10.5734 eps_1: 0.0111421904286 eps_2: 0.0111421904286
+Crashed Player 2. Starting New Session. Iteration: 520, Score: 20
+Crashed Player 1. Starting New Session. Iteration: 521, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 522, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 523, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 524, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 525, Score: 0
+Frame Step: 2085000 STATE: explore Q_MAX1: 7.5933 Q_MAX2: 12.0445 eps_1: 0.0110469999524 eps_2: 0.0110469999524
+Crashed Player 2. Starting New Session. Iteration: 526, Score: 26
+Crashed Player 1. Starting New Session. Iteration: 527, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 528, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 529, Score: 7
+Frame Step: 2086000 STATE: explore Q_MAX1: 9.22903 Q_MAX2: 11.7156 eps_1: 0.0109518094762 eps_2: 0.0109518094762
+Crashed Player 1. Starting New Session. Iteration: 530, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 531, Score: 23
+Crashed Player 2. Starting New Session. Iteration: 532, Score: 14
+Frame Step: 2087000 STATE: explore Q_MAX1: 8.48793 Q_MAX2: 10.8203 eps_1: 0.010856619 eps_2: 0.010856619
+Crashed Player 2. Starting New Session. Iteration: 533, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 534, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 535, Score: 2
+Frame Step: 2088000 STATE: explore Q_MAX1: 8.02815 Q_MAX2: 11.1187 eps_1: 0.0107614285238 eps_2: 0.0107614285238
+Crashed Player 2. Starting New Session. Iteration: 536, Score: 47
+Crashed Player 1. Starting New Session. Iteration: 537, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 538, Score: 5
+Crashed Player 1. Starting New Session. Iteration: 539, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 540, Score: 10
+Crashed Player 2. Starting New Session. Iteration: 541, Score: 4
+Frame Step: 2089000 STATE: explore Q_MAX1: 8.23482 Q_MAX2: 9.29034 eps_1: 0.0106662380476 eps_2: 0.0106662380476
+Crashed Player 2. Starting New Session. Iteration: 542, Score: 25
+Frame Step: 2090000 STATE: explore Q_MAX1: 8.04739 Q_MAX2: 9.73644 eps_1: 0.0105710475714 eps_2: 0.0105710475714
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 543, Score: 34
+Crashed Player 1. Starting New Session. Iteration: 544, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 545, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 546, Score: 14
+Frame Step: 2091000 STATE: explore Q_MAX1: 8.2979 Q_MAX2: 11.7521 eps_1: 0.0104758570952 eps_2: 0.0104758570952
+Crashed Player 1. Starting New Session. Iteration: 547, Score: 28
+Crashed Player 1. Starting New Session. Iteration: 548, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 549, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 550, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 551, Score: 6
+Frame Step: 2092000 STATE: explore Q_MAX1: 8.36396 Q_MAX2: 10.3747 eps_1: 0.010380666619 eps_2: 0.010380666619
+Crashed Player 1. Starting New Session. Iteration: 552, Score: 7
+Crashed Player 1. Starting New Session. Iteration: 553, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 554, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 555, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 556, Score: 8
+Frame Step: 2093000 STATE: explore Q_MAX1: 9.2832 Q_MAX2: 10.482 eps_1: 0.0102854761429 eps_2: 0.0102854761429
+Crashed Player 1. Starting New Session. Iteration: 557, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 558, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 559, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 560, Score: 12
+Crashed Player 2. Starting New Session. Iteration: 561, Score: 13
+Crashed Player 2. Starting New Session. Iteration: 562, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 563, Score: 1
+Frame Step: 2094000 STATE: explore Q_MAX1: 8.92817 Q_MAX2: 12.1312 eps_1: 0.0101902856667 eps_2: 0.0101902856667
+Crashed Player 2. Starting New Session. Iteration: 564, Score: 6
+Frame Step: 2095000 STATE: explore Q_MAX1: 8.47849 Q_MAX2: 12.101 eps_1: 0.0100950951905 eps_2: 0.0100950951905
+Crashed Player 2. Starting New Session. Iteration: 565, Score: 49
+Crashed Player 2. Starting New Session. Iteration: 566, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 567, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 568, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 569, Score: 2
+Frame Step: 2096000 STATE: explore Q_MAX1: 8.97148 Q_MAX2: 12.3466 eps_1: 0.00999990471428 eps_2: 0.00999990471428
+Crashed Player 2. Starting New Session. Iteration: 570, Score: 30
+Crashed Player 1. Starting New Session. Iteration: 571, Score: 12
+Frame Step: 2097000 STATE: explore Q_MAX1: 7.28554 Q_MAX2: 9.65315 eps_1: 0.00990471423809 eps_2: 0.00990471423809
+Crashed Player 2. Starting New Session. Iteration: 572, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 573, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 574, Score: 36
+Frame Step: 2098000 STATE: explore Q_MAX1: 9.13593 Q_MAX2: 13.3367 eps_1: 0.0098095237619 eps_2: 0.0098095237619
+Frame Step: 2099000 STATE: explore Q_MAX1: 8.58554 Q_MAX2: 12.8407 eps_1: 0.00971433328571 eps_2: 0.00971433328571
+Crashed Player 2. Starting New Session. Iteration: 575, Score: 83
+Crashed Player 1. Starting New Session. Iteration: 576, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 577, Score: 2
+Frame Step: 2100000 STATE: explore Q_MAX1: 5.01276 Q_MAX2: 6.64777 eps_1: 0.00961914280952 eps_2: 0.00961914280952
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 578, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 579, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 580, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 581, Score: 5
+Frame Step: 2101000 STATE: explore Q_MAX1: 8.1414 Q_MAX2: 12.4436 eps_1: 0.00952395233332 eps_2: 0.00952395233332
+Crashed Player 2. Starting New Session. Iteration: 582, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 583, Score: 24
+Crashed Player 2. Starting New Session. Iteration: 584, Score: 17
+Frame Step: 2102000 STATE: explore Q_MAX1: 8.70075 Q_MAX2: 11.929 eps_1: 0.00942876185713 eps_2: 0.00942876185713
+Crashed Player 1. Starting New Session. Iteration: 585, Score: 49
+Frame Step: 2103000 STATE: explore Q_MAX1: 9.42757 Q_MAX2: 12.7453 eps_1: 0.00933357138094 eps_2: 0.00933357138094
+Crashed Player 1. Starting New Session. Iteration: 586, Score: 30
+Crashed Player 2. Starting New Session. Iteration: 587, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 588, Score: 12
+Frame Step: 2104000 STATE: explore Q_MAX1: 9.5226 Q_MAX2: 12.7522 eps_1: 0.00923838090475 eps_2: 0.00923838090475
+Crashed Player 2. Starting New Session. Iteration: 589, Score: 18
+Crashed Player 1. Starting New Session. Iteration: 590, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 591, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 592, Score: 12
+Frame Step: 2105000 STATE: explore Q_MAX1: 8.99692 Q_MAX2: 10.4757 eps_1: 0.00914319042856 eps_2: 0.00914319042856
+Crashed Player 2. Starting New Session. Iteration: 593, Score: 50
+Crashed Player 1. Starting New Session. Iteration: 594, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 595, Score: 8
+Frame Step: 2106000 STATE: explore Q_MAX1: 9.18739 Q_MAX2: 12.2618 eps_1: 0.00904799995237 eps_2: 0.00904799995237
+Crashed Player 2. Starting New Session. Iteration: 596, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 597, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 598, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 599, Score: 24
+Frame Step: 2107000 STATE: explore Q_MAX1: 9.18983 Q_MAX2: 11.7323 eps_1: 0.00895280947618 eps_2: 0.00895280947618
+Crashed Player 2. Starting New Session. Iteration: 600, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 601, Score: 17
+Crashed Player 1. Starting New Session. Iteration: 602, Score: 22
+Frame Step: 2108000 STATE: explore Q_MAX1: 8.96733 Q_MAX2: 12.3467 eps_1: 0.00885761899999 eps_2: 0.00885761899999
+Crashed Player 1. Starting New Session. Iteration: 603, Score: 8
+Crashed Player 2. Starting New Session. Iteration: 604, Score: 19
+Crashed Player 2. Starting New Session. Iteration: 605, Score: 1
+Frame Step: 2109000 STATE: explore Q_MAX1: 8.69351 Q_MAX2: 12.0168 eps_1: 0.0087624285238 eps_2: 0.0087624285238
+Crashed Player 1. Starting New Session. Iteration: 606, Score: 59
+Frame Step: 2110000 STATE: explore Q_MAX1: 8.4038 Q_MAX2: 12.5032 eps_1: 0.00866723804761 eps_2: 0.00866723804761
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 1. Starting New Session. Iteration: 607, Score: 26
+Crashed Player 1. Starting New Session. Iteration: 608, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 609, Score: 8
+Crashed Player 1. Starting New Session. Iteration: 610, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 611, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 612, Score: 11
+Frame Step: 2111000 STATE: explore Q_MAX1: 8.99626 Q_MAX2: 9.80929 eps_1: 0.00857204757142 eps_2: 0.00857204757142
+Frame Step: 2112000 STATE: explore Q_MAX1: 8.59828 Q_MAX2: 8.91267 eps_1: 0.00847685709523 eps_2: 0.00847685709523
+Crashed Player 1. Starting New Session. Iteration: 613, Score: 65
+Crashed Player 1. Starting New Session. Iteration: 614, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 615, Score: 34
+Frame Step: 2113000 STATE: explore Q_MAX1: 9.77335 Q_MAX2: 11.8729 eps_1: 0.00838166661904 eps_2: 0.00838166661904
+Crashed Player 1. Starting New Session. Iteration: 616, Score: 19
+Crashed Player 1. Starting New Session. Iteration: 617, Score: 20
+Crashed Player 2. Starting New Session. Iteration: 618, Score: 5
+Frame Step: 2114000 STATE: explore Q_MAX1: 8.4938 Q_MAX2: 12.8763 eps_1: 0.00828647614285 eps_2: 0.00828647614285
+Crashed Player 2. Starting New Session. Iteration: 619, Score: 25
+Crashed Player 2. Starting New Session. Iteration: 620, Score: 21
+Frame Step: 2115000 STATE: explore Q_MAX1: 9.89336 Q_MAX2: 11.5626 eps_1: 0.00819128566666 eps_2: 0.00819128566666
+Frame Step: 2116000 STATE: explore Q_MAX1: 9.02033 Q_MAX2: 12.4838 eps_1: 0.00809609519046 eps_2: 0.00809609519046
+Crashed Player 1. Starting New Session. Iteration: 621, Score: 116
+Frame Step: 2117000 STATE: explore Q_MAX1: 9.11336 Q_MAX2: 11.4212 eps_1: 0.00800090471427 eps_2: 0.00800090471427
+Crashed Player 2. Starting New Session. Iteration: 622, Score: 48
+Crashed Player 2. Starting New Session. Iteration: 623, Score: 0
+Frame Step: 2118000 STATE: explore Q_MAX1: 9.2545 Q_MAX2: 12.9394 eps_1: 0.00790571423808 eps_2: 0.00790571423808
+Crashed Player 1. Starting New Session. Iteration: 624, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 625, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 626, Score: 16
+Frame Step: 2119000 STATE: explore Q_MAX1: 10.1499 Q_MAX2: 12.0632 eps_1: 0.00781052376189 eps_2: 0.00781052376189
+Crashed Player 2. Starting New Session. Iteration: 627, Score: 21
+Crashed Player 1. Starting New Session. Iteration: 628, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 629, Score: 26
+Frame Step: 2120000 STATE: explore Q_MAX1: 8.5798 Q_MAX2: 9.9076 eps_1: 0.0077153332857 eps_2: 0.0077153332857
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 630, Score: 37
+Crashed Player 2. Starting New Session. Iteration: 631, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 632, Score: 6
+Frame Step: 2121000 STATE: explore Q_MAX1: 8.56509 Q_MAX2: 11.7332 eps_1: 0.00762014280951 eps_2: 0.00762014280951
+Crashed Player 1. Starting New Session. Iteration: 633, Score: 17
+Crashed Player 2. Starting New Session. Iteration: 634, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 635, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 636, Score: 10
+Frame Step: 2122000 STATE: explore Q_MAX1: 9.56052 Q_MAX2: 10.5075 eps_1: 0.00752495233332 eps_2: 0.00752495233332
+Crashed Player 1. Starting New Session. Iteration: 637, Score: 13
+Crashed Player 1. Starting New Session. Iteration: 638, Score: 32
+Frame Step: 2123000 STATE: explore Q_MAX1: 9.68785 Q_MAX2: 12.2672 eps_1: 0.00742976185713 eps_2: 0.00742976185713
+Crashed Player 2. Starting New Session. Iteration: 639, Score: 28
+Crashed Player 1. Starting New Session. Iteration: 640, Score: 9
+Crashed Player 2. Starting New Session. Iteration: 641, Score: 6
+Crashed Player 2. Starting New Session. Iteration: 642, Score: 9
+Frame Step: 2124000 STATE: explore Q_MAX1: 8.67619 Q_MAX2: 11.008 eps_1: 0.00733457138094 eps_2: 0.00733457138094
+Crashed Player 2. Starting New Session. Iteration: 643, Score: 28
+Crashed Player 2. Starting New Session. Iteration: 644, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 645, Score: 4
+Frame Step: 2125000 STATE: explore Q_MAX1: 10.1342 Q_MAX2: 13.143 eps_1: 0.00723938090475 eps_2: 0.00723938090475
+Frame Step: 2126000 STATE: explore Q_MAX1: 9.49151 Q_MAX2: 13.4815 eps_1: 0.00714419042856 eps_2: 0.00714419042856
+Crashed Player 2. Starting New Session. Iteration: 646, Score: 93
+Crashed Player 2. Starting New Session. Iteration: 647, Score: 16
+Crashed Player 1. Starting New Session. Iteration: 648, Score: 14
+Frame Step: 2127000 STATE: explore Q_MAX1: 6.45921 Q_MAX2: 8.14393 eps_1: 0.00704899995237 eps_2: 0.00704899995237
+Crashed Player 2. Starting New Session. Iteration: 649, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 650, Score: 7
+Frame Step: 2128000 STATE: explore Q_MAX1: 8.92333 Q_MAX2: 13.0857 eps_1: 0.00695380947618 eps_2: 0.00695380947618
+Crashed Player 1. Starting New Session. Iteration: 651, Score: 45
+Crashed Player 1. Starting New Session. Iteration: 652, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 653, Score: 2
+Crashed Player 2. Starting New Session. Iteration: 654, Score: 31
+Frame Step: 2129000 STATE: explore Q_MAX1: 8.81741 Q_MAX2: 11.7527 eps_1: 0.00685861899999 eps_2: 0.00685861899999
+Crashed Player 1. Starting New Session. Iteration: 655, Score: 12
+Frame Step: 2130000 STATE: explore Q_MAX1: 9.56437 Q_MAX2: 12.5703 eps_1: 0.0067634285238 eps_2: 0.0067634285238
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 656, Score: 63
+Crashed Player 2. Starting New Session. Iteration: 657, Score: 20
+Crashed Player 2. Starting New Session. Iteration: 658, Score: 4
+Frame Step: 2131000 STATE: explore Q_MAX1: 9.71287 Q_MAX2: 12.931 eps_1: 0.0066682380476 eps_2: 0.0066682380476
+Crashed Player 2. Starting New Session. Iteration: 659, Score: 27
+Crashed Player 1. Starting New Session. Iteration: 660, Score: 2
+Frame Step: 2132000 STATE: explore Q_MAX1: 10.3444 Q_MAX2: 12.7701 eps_1: 0.00657304757141 eps_2: 0.00657304757141
+Crashed Player 1. Starting New Session. Iteration: 661, Score: 27
+Crashed Player 1. Starting New Session. Iteration: 662, Score: 36
+Frame Step: 2133000 STATE: explore Q_MAX1: 10.2729 Q_MAX2: 12.9505 eps_1: 0.00647785709522 eps_2: 0.00647785709522
+Crashed Player 2. Starting New Session. Iteration: 663, Score: 60
+Frame Step: 2134000 STATE: explore Q_MAX1: 9.99414 Q_MAX2: 13.8296 eps_1: 0.00638266661903 eps_2: 0.00638266661903
+Crashed Player 2. Starting New Session. Iteration: 664, Score: 11
+Crashed Player 2. Starting New Session. Iteration: 665, Score: 3
+Crashed Player 2. Starting New Session. Iteration: 666, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 667, Score: 11
+Frame Step: 2135000 STATE: explore Q_MAX1: 8.74424 Q_MAX2: 10.7115 eps_1: 0.00628747614284 eps_2: 0.00628747614284
+Frame Step: 2136000 STATE: explore Q_MAX1: 9.54278 Q_MAX2: 12.7674 eps_1: 0.00619228566665 eps_2: 0.00619228566665
+Crashed Player 1. Starting New Session. Iteration: 668, Score: 84
+Crashed Player 1. Starting New Session. Iteration: 669, Score: 40
+Frame Step: 2137000 STATE: explore Q_MAX1: 9.33397 Q_MAX2: 12.345 eps_1: 0.00609709519046 eps_2: 0.00609709519046
+Crashed Player 2. Starting New Session. Iteration: 670, Score: 5
+Crashed Player 2. Starting New Session. Iteration: 671, Score: 2
+Crashed Player 1. Starting New Session. Iteration: 672, Score: 4
+Crashed Player 1. Starting New Session. Iteration: 673, Score: 16
+Crashed Player 2. Starting New Session. Iteration: 674, Score: 0
+Crashed Player 2. Starting New Session. Iteration: 675, Score: 3
+Crashed Player 1. Starting New Session. Iteration: 676, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 677, Score: 0
+Frame Step: 2138000 STATE: explore Q_MAX1: 10.1649 Q_MAX2: 12.7737 eps_1: 0.00600190471427 eps_2: 0.00600190471427
+Frame Step: 2139000 STATE: explore Q_MAX1: 9.34537 Q_MAX2: 11.3403 eps_1: 0.00590671423808 eps_2: 0.00590671423808
+Crashed Player 2. Starting New Session. Iteration: 678, Score: 64
+Crashed Player 1. Starting New Session. Iteration: 679, Score: 20
+Crashed Player 2. Starting New Session. Iteration: 680, Score: 26
+Frame Step: 2140000 STATE: explore Q_MAX1: 9.56416 Q_MAX2: 11.356 eps_1: 0.00581152376189 eps_2: 0.00581152376189
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 681, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 682, Score: 0
+Crashed Player 1. Starting New Session. Iteration: 683, Score: 22
+Crashed Player 1. Starting New Session. Iteration: 684, Score: 6
+Crashed Player 1. Starting New Session. Iteration: 685, Score: 0
+Frame Step: 2141000 STATE: explore Q_MAX1: 9.76707 Q_MAX2: 13.3192 eps_1: 0.0057163332857 eps_2: 0.0057163332857
+Frame Step: 2142000 STATE: explore Q_MAX1: 10.189 Q_MAX2: 12.9834 eps_1: 0.00562114280951 eps_2: 0.00562114280951
+Crashed Player 1. Starting New Session. Iteration: 686, Score: 93
+Frame Step: 2143000 STATE: explore Q_MAX1: 10.7826 Q_MAX2: 14.0439 eps_1: 0.00552595233332 eps_2: 0.00552595233332
+Crashed Player 2. Starting New Session. Iteration: 687, Score: 22
+Crashed Player 2. Starting New Session. Iteration: 688, Score: 25
+Frame Step: 2144000 STATE: explore Q_MAX1: 9.18328 Q_MAX2: 12.5443 eps_1: 0.00543076185713 eps_2: 0.00543076185713
+Crashed Player 1. Starting New Session. Iteration: 689, Score: 57
+Crashed Player 1. Starting New Session. Iteration: 690, Score: 6
+Frame Step: 2145000 STATE: explore Q_MAX1: 9.83133 Q_MAX2: 14.4604 eps_1: 0.00533557138094 eps_2: 0.00533557138094
+Crashed Player 2. Starting New Session. Iteration: 691, Score: 9
+Frame Step: 2146000 STATE: explore Q_MAX1: 9.92723 Q_MAX2: 12.0402 eps_1: 0.00524038090474 eps_2: 0.00524038090474
+Crashed Player 2. Starting New Session. Iteration: 692, Score: 62
+Crashed Player 1. Starting New Session. Iteration: 693, Score: 26
+Frame Step: 2147000 STATE: explore Q_MAX1: 10.274 Q_MAX2: 13.3292 eps_1: 0.00514519042855 eps_2: 0.00514519042855
+Crashed Player 1. Starting New Session. Iteration: 694, Score: 28
+Frame Step: 2148000 STATE: explore Q_MAX1: 9.36892 Q_MAX2: 11.8557 eps_1: 0.00504999995236 eps_2: 0.00504999995236
+Crashed Player 1. Starting New Session. Iteration: 695, Score: 47
+Crashed Player 2. Starting New Session. Iteration: 696, Score: 13
+Frame Step: 2149000 STATE: explore Q_MAX1: 9.30988 Q_MAX2: 11.4284 eps_1: 0.00495480947617 eps_2: 0.00495480947617
+Crashed Player 2. Starting New Session. Iteration: 697, Score: 29
+Frame Step: 2150000 STATE: explore Q_MAX1: 9.19468 Q_MAX2: 12.3488 eps_1: 0.00485961899998 eps_2: 0.00485961899998
+saved networks! to saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 698, Score: 55
+Frame Step: 2151000 STATE: explore Q_MAX1: 8.96084 Q_MAX2: 13.7634 eps_1: 0.00476442852379 eps_2: 0.00476442852379
+Crashed Player 1. Starting New Session. Iteration: 699, Score: 76
+Crashed Player 2. Starting New Session. Iteration: 700, Score: 13
+Frame Step: 2152000 STATE: explore Q_MAX1: 10.218 Q_MAX2: 13.2039 eps_1: 0.0046692380476 eps_2: 0.0046692380476
+Crashed Player 2. Starting New Session. Iteration: 701, Score: 31
+Crashed Player 2. Starting New Session. Iteration: 702, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 703, Score: 1
+Crashed Player 2. Starting New Session. Iteration: 704, Score: 4
+Frame Step: 2153000 STATE: explore Q_MAX1: 10.0087 Q_MAX2: 13.804 eps_1: 0.00457404757141 eps_2: 0.00457404757141
+Crashed Player 1. Starting New Session. Iteration: 705, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 706, Score: 39
+Frame Step: 2154000 STATE: explore Q_MAX1: 9.7915 Q_MAX2: 12.6334 eps_1: 0.00447885709522 eps_2: 0.00447885709522
+Crashed Player 1. Starting New Session. Iteration: 707, Score: 18
+Crashed Player 2. Starting New Session. Iteration: 708, Score: 1
+Crashed Player 1. Starting New Session. Iteration: 709, Score: 24
+Crashed Player 2. Starting New Session. Iteration: 710, Score: 2
+Frame Step: 2155000 STATE: explore Q_MAX1: 10.3078 Q_MAX2: 13.463 eps_1: 0.00438366661903 eps_2: 0.00438366661903
+Crashed Player 1. Starting New Session. Iteration: 711, Score: 14
+Crashed Player 1. Starting New Session. Iteration: 712, Score: 14
+Crashed Player 2. Starting New Session. Iteration: 713, Score: 21
+Frame Step: 2156000 STATE: explore Q_MAX1: 9.27009 Q_MAX2: 11.2806 eps_1: 0.00428847614284 eps_2: 0.00428847614284
+Frame Step: 2157000 STATE: explore Q_MAX1: 9.50005 Q_MAX2: 13.5239 eps_1: 0.00419328566665 eps_2: 0.00419328566665
+Crashed Player 1. Starting New Session. Iteration: 714, Score: 73
+Crashed Player 2. Starting New Session. Iteration: 715, Score: 27
+Crashed Player 2. Starting New Session. Iteration: 716, Score: 7
+Frame Step: 2158000 STATE: explore Q_MAX1: 9.27582 Q_MAX2: 12.9381 eps_1: 0.00409809519046 eps_2: 0.00409809519046
+Crashed Player 2. Starting New Session. Iteration: 717, Score: 9
+Crashed Player 1. Starting New Session. Iteration: 718, Score: 35
+Frame Step: 2159000 STATE: explore Q_MAX1: 10.2843 Q_MAX2: 13.7131 eps_1: 0.00400290471427 eps_2: 0.00400290471427
+Crashed Player 1. Starting New Session. Iteration: 719, Score: 24
+Crashed Player 1. Starting New Session. Iteration: 720, Score: 3
+e ^CTraceback (most recent call last):
+  File "deep_q_flappy_multiplayer_classbased.py", line 271, in <module>
+    main()
+  File "deep_q_flappy_multiplayer_classbased.py", line 268, in main
+    playGame()
+  File "deep_q_flappy_multiplayer_classbased.py", line 265, in playGame
+    trainNetworks(sess)
+  File "deep_q_flappy_multiplayer_classbased.py", line 231, in trainNetworks
+    q_learner2.get_consequences(r_t_2, next_obs, a_t_2, terminal)
+  File "deep_q_flappy_multiplayer_classbased.py", line 166, in get_consequences
+    self.s : s_j_batch}
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/ops.py", line 1449, in run
+    _run_using_default_session(self, feed_dict, self.graph, session)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/ops.py", line 3668, in _run_using_default_session
+    session.run(operation, feed_dict)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 766, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 964, in _run
+    feed_dict_string, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1014, in _do_run
+    target_list, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1021, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1003, in _run_fn
+    status, run_metadata)
+KeyboardInterrupt
+ubuntu@rl:~/flappy_bird/ComputerVision$ exit
+exit

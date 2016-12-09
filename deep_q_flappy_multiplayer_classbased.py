@@ -16,7 +16,7 @@ GAME = 'flappybird_twocolor_horizontal' # the name of the game being played for 
 ACTIONS_PER_AGENT = 2 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
-EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
+EXPLORATION_STEPS = 2100000. # frames over which to anneal epsilon
 FINAL_EPSILON = 0.0001 # final value of epsilon 0.0001
 INITIAL_EPSILON = 0.2 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
@@ -25,7 +25,7 @@ FRAME_PER_ACTION = 1
 LOAD_CHECKPOINTS = True
 OLD_CHECKPOINTS = False
 NUM_PLAYERS = 2
-num_steps_upon_load = 1840000
+num_steps_upon_load = 1960000
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.01)
