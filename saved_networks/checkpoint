@@ -1,2 +1,6 @@
-model_checkpoint_path: "flappybird_twocolor_horizontal-multi_agent_dqn-2150000"
-all_model_checkpoint_paths: "flappybird_twocolor_horizontal-multi_agent_dqn-2150000"
+model_checkpoint_path: "flappybird_twocolor_horizontal-multi_agent_dqn-2260000"
+all_model_checkpoint_paths: "flappybird_twocolor_horizontal-multi_agent_dqn-2220000"
+all_model_checkpoint_paths: "flappybird_twocolor_horizontal-multi_agent_dqn-2230000"
+all_model_checkpoint_paths: "flappybird_twocolor_horizontal-multi_agent_dqn-2240000"
+all_model_checkpoint_paths: "flappybird_twocolor_horizontal-multi_agent_dqn-2250000"
+all_model_checkpoint_paths: "flappybird_twocolor_horizontal-multi_agent_dqn-2260000"
