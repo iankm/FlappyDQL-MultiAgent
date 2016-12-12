@@ -4,8 +4,6 @@ from __future__ import division
 
 import tensorflow as tf
 import cv2
-import sys
-sys.path.append("games/")
 import wrapped_flappy_bird as game
 # from wrapped_flappy_bird import itercount
 import random
@@ -16,7 +14,7 @@ GAME = 'flappybird_twocolor_horizontal' # the name of the game being played for 
 ACTIONS_PER_AGENT = 2 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
 OBSERVATION_STEPS = 100000. # timesteps to observe before training
-EXPLORATION_STEPS = 2100000. # frames over which to anneal epsilon
+EXPLORATION_STEPS = 2000000. # frames over which to anneal epsilon
 FINAL_EPSILON = 0.0001 # final value of epsilon 0.0001
 INITIAL_EPSILON = 0.2 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
@@ -25,7 +23,8 @@ FRAME_PER_ACTION = 1
 LOAD_CHECKPOINTS = True
 OLD_CHECKPOINTS = False
 NUM_PLAYERS = 2
-num_steps_upon_load = 1960000
+DO_TRAIN = False
+num_steps_upon_load = 2150000
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.01)
@@ -94,7 +93,10 @@ class DeepQNet:
         self.readout = readout # output of Q-Net corresponds to Q values of each action
         self.last_layer = last_layer
         self.D = deque() # to store the action replays of the most recent state transitions
-        self.epsilon = INITIAL_EPSILON - ((INITIAL_EPSILON - FINAL_EPSILON) * num_steps_upon_load/EXPLORATION_STEPS) 
+	if num_steps_upon_load > EXPLORATION_STEPS:
+		self.epsilon = FINAL_EPSILON
+	else:
+        	self.epsilon = INITIAL_EPSILON - ((INITIAL_EPSILON - FINAL_EPSILON) * num_steps_upon_load/EXPLORATION_STEPS) 
         self.s_t = np.stack((x_0, x_0, x_0, x_0), axis=2) # "observation" = last 4 images
         self.t = num_steps_upon_load # time step
         
@@ -129,13 +131,15 @@ class DeepQNet:
 
         if self.epsilon > FINAL_EPSILON and self.t > (num_steps_upon_load + OBSERVATION_STEPS):
             self.epsilon -= (INITIAL_EPSILON - FINAL_EPSILON) / EXPLORATION_STEPS
+	if self.epsilon > FINAL_EPSILON and self.t > (EXPLORATION_STEPS + OBSERVATION_STEPS):
+            self.epsilon = FINAL_EPSILON
 
         self.D.append((self.s_t, a_t, r_t, s_t1, terminal))
         if len(self.D) > REPLAY_MEMORY:
             self.D.popleft()
 
         # only train if done observing
-        if self.t > (OBSERVATION_STEPS + num_steps_upon_load):
+        if DO_TRAIN and self.t > (OBSERVATION_STEPS + num_steps_upon_load):
 	    # inserted only to resume training from saved checkpoint with correct epsilon...
 	    #if self.t == OBSERVATION_STEPS + 1:
 	    #	self.t = num_steps_upon_load
