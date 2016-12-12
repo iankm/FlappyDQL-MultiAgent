@@ -13,7 +13,7 @@ import random
 import numpy as np
 from collections import deque
 
-save_path = './' # '/Users/corbinrosset/Dropbox/CV/final_project/code/ComputerVision/saved_networks/'
+save_path = './saved_networks/' # '/Users/corbinrosset/Dropbox/CV/final_project/code/ComputerVision/saved_networks/'
 GAME = 'flappybird_twocolor_horizontal' # the name of the game being played for log files
 ACTIONS_PER_AGENT = 2 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
@@ -27,8 +27,8 @@ FRAME_PER_ACTION = 1
 LOAD_CHECKPOINTS = True
 OLD_CHECKPOINTS = False
 NUM_PLAYERS = 2
-DO_TRAIN = False
-num_steps_upon_load = 2150000
+DO_TRAIN = True
+num_steps_upon_load = 2150000 # number of frame steps already done by loaded network params
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.01)
@@ -215,8 +215,8 @@ def trainNetworks(sess):
         if checkpoint and checkpoint.model_checkpoint_path:
             model_checkpoint_path = checkpoint.model_checkpoint_path
             # saver.restore(sess, checkpoint.model_checkpoint_path)
-        if not os.path.isabs(model_checkpoint_path):
-            model_checkpoint_path = os.path.relpath(model_checkpoint_path, save_path)
+        #if not os.path.isabs(model_checkpoint_path):
+        #    model_checkpoint_path = os.path.relpath(model_checkpoint_path, save_path)
         print(model_checkpoint_path)
         try:
             saver.restore(sess, model_checkpoint_path)
@@ -225,7 +225,6 @@ def trainNetworks(sess):
             print("Error: Could not find old network weights")
             exit()
 
-        exit()
     # start training
     t = num_steps_upon_load
     while "flappy bird" != "donald trump":

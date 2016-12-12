@@ -17,7 +17,7 @@ import os
 FPS = 10000
 SCREENWIDTH  = 288
 SCREENHEIGHT = 512
-DISPLAY = True
+DISPLAY = False
 
 pygame.init()
 #pygame.display.init()
