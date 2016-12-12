@@ -4,12 +4,16 @@ from __future__ import division
 
 import tensorflow as tf
 import cv2
+import sys
+import os
+sys.path.append("games/")
 import wrapped_flappy_bird as game
 # from wrapped_flappy_bird import itercount
 import random
 import numpy as np
 from collections import deque
 
+save_path = './' # '/Users/corbinrosset/Dropbox/CV/final_project/code/ComputerVision/saved_networks/'
 GAME = 'flappybird_twocolor_horizontal' # the name of the game being played for log files
 ACTIONS_PER_AGENT = 2 # number of valid actions
 GAMMA = 0.99 # decay rate of past observations
@@ -199,20 +203,29 @@ def trainNetworks(sess):
     q_learner2 = DeepQNet('player2', x_0, sess)
 
     ### saving future networks and loading pre-saved ones
-    saver = tf.train.Saver() #### put tf.all_variables() as arg??????????
+    saver = tf.train.Saver(tf.all_variables()) #### put tf.all_variables() as arg??????????
     sess.run(tf.initialize_all_variables())
+    model_checkpoint_path = ''
     if(LOAD_CHECKPOINTS):
         if(OLD_CHECKPOINTS):
             checkpoint = tf.train.get_checkpoint_state("github_networks")
         else:
-            checkpoint = tf.train.get_checkpoint_state("saved_networks")
+            checkpoint = tf.train.get_checkpoint_state(save_path)
+            print(save_path)
         if checkpoint and checkpoint.model_checkpoint_path:
-           saver.restore(sess, checkpoint.model_checkpoint_path)
-           print("Successfully loaded:", checkpoint.model_checkpoint_path)
-        else:
-           print("Error: Could not find old network weights")
-	   exit()
+            model_checkpoint_path = checkpoint.model_checkpoint_path
+            # saver.restore(sess, checkpoint.model_checkpoint_path)
+        if not os.path.isabs(model_checkpoint_path):
+            model_checkpoint_path = os.path.relpath(model_checkpoint_path, save_path)
+        print(model_checkpoint_path)
+        try:
+            saver.restore(sess, model_checkpoint_path)
+            print("Successfully loaded:", checkpoint.model_checkpoint_path)
+        except:
+            print("Error: Could not find old network weights")
+            exit()
 
+        exit()
     # start training
     t = num_steps_upon_load
     while "flappy bird" != "donald trump":
@@ -241,9 +254,9 @@ def trainNetworks(sess):
             print ('Frame Step: ' + str(t) + ' STATE: ' + str(state) \
                 + ' Q_MAX1: ' + str(q_t_1) + ' Q_MAX2: ' + str(q_t_2) \
 		+ ' eps_1: ' + str(q_learner1.epsilon) + ' eps_2: ' + str(q_learner2.epsilon))
-        if t % 10000 == 0:
-            print('saved networks! to saved_networks/' + GAME + '-multi_agent_dqn')
-            saver.save(sess, 'saved_networks/' + GAME + '-multi_agent_dqn', global_step = t)
+        if t % 1000 == 0:
+            print('saved networks! to ' + save_path + GAME + '-multi_agent_dqn')
+            saver.save(sess, save_path + GAME + '-multi_agent_dqn', global_step = t)
 
         # print info
         state = ""
