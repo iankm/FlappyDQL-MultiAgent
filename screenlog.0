@@ -179,3 +179,365 @@ Crashed Player 2. Starting New Session. Iteration: 50, Score: 94
 Frame Step: 2259000 STATE: explore Q_MAX1: 10.7377 Q_MAX2: 15.9291 eps_1: 0.0001 eps_2: 0.0001
 Frame Step: 2260000 STATE: explore Q_MAX1: 10.6638 Q_MAX2: 14.808 eps_1: 0.0001 eps_2: 0.0001
 saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+
+python deep_q_flappy_multiplayer_classbased.py 
+ALSA lib confmisc.c:768:(parse_card) cannot find card '0'
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1251:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM default
+initial epsilon: 0.0001
+initial epsilon: 0.0001
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:206 in trainNetworks.: all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2016-03-02.
+Instructions for updating:
+Please use tf.global_variables instead.
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:207 in trainNetworks.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+./saved_networks/
+./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-2260000
+Successfully loaded: ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-2260000
+Frame Step: 2261000 STATE: observe Q_MAX1: 10.8507 Q_MAX2: 14.192 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2262000 STATE: observe Q_MAX1: 11.2471 Q_MAX2: 14.3248 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2263000 STATE: observe Q_MAX1: 10.5588 Q_MAX2: 13.8718 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2264000 STATE: observe Q_MAX1: 11.1112 Q_MAX2: 14.4522 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2265000 STATE: observe Q_MAX1: 10.9642 Q_MAX2: 14.7092 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2266000 STATE: observe Q_MAX1: 10.8983 Q_MAX2: 14.4795 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2267000 STATE: observe Q_MAX1: 10.8117 Q_MAX2: 14.2371 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2268000 STATE: observe Q_MAX1: 10.6804 Q_MAX2: 13.5581 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2269000 STATE: observe Q_MAX1: 10.8064 Q_MAX2: 14.4864 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 1, Score: 518
+Frame Step: 2270000 STATE: observe Q_MAX1: 10.9971 Q_MAX2: 14.1515 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2271000 STATE: observe Q_MAX1: 10.9512 Q_MAX2: 14.17 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2272000 STATE: observe Q_MAX1: 10.7863 Q_MAX2: 14.3902 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2273000 STATE: observe Q_MAX1: 11.1454 Q_MAX2: 14.7874 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2274000 STATE: observe Q_MAX1: 10.352 Q_MAX2: 13.8855 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2275000 STATE: observe Q_MAX1: 11.2262 Q_MAX2: 14.7389 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 2, Score: 322
+Frame Step: 2276000 STATE: observe Q_MAX1: 11.1865 Q_MAX2: 14.905 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 3, Score: 39
+Frame Step: 2277000 STATE: observe Q_MAX1: 10.7789 Q_MAX2: 14.3692 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2278000 STATE: observe Q_MAX1: 11.0043 Q_MAX2: 14.6624 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 4, Score: 130
+Frame Step: 2279000 STATE: observe Q_MAX1: 11.1184 Q_MAX2: 15.5105 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2280000 STATE: observe Q_MAX1: 10.8294 Q_MAX2: 14.7587 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2281000 STATE: observe Q_MAX1: 11.2636 Q_MAX2: 15.7316 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2282000 STATE: observe Q_MAX1: 10.9446 Q_MAX2: 15.3134 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 5, Score: 183
+Frame Step: 2283000 STATE: observe Q_MAX1: 11.0977 Q_MAX2: 14.5378 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 6, Score: 82
+Frame Step: 2284000 STATE: observe Q_MAX1: 11.051 Q_MAX2: 14.2821 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2285000 STATE: observe Q_MAX1: 11.068 Q_MAX2: 13.9801 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2286000 STATE: observe Q_MAX1: 10.8518 Q_MAX2: 14.3079 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 7, Score: 152
+Frame Step: 2287000 STATE: observe Q_MAX1: 10.3277 Q_MAX2: 12.7369 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2288000 STATE: observe Q_MAX1: 11.2863 Q_MAX2: 14.6788 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2289000 STATE: observe Q_MAX1: 10.9707 Q_MAX2: 14.0531 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 8, Score: 160
+Frame Step: 2290000 STATE: observe Q_MAX1: 10.9309 Q_MAX2: 15.0389 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 9, Score: 51
+Frame Step: 2291000 STATE: observe Q_MAX1: 10.1909 Q_MAX2: 13.333 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2292000 STATE: observe Q_MAX1: 10.9835 Q_MAX2: 14.3054 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2293000 STATE: observe Q_MAX1: 10.9704 Q_MAX2: 15.1183 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2294000 STATE: observe Q_MAX1: 10.5313 Q_MAX2: 14.1907 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2295000 STATE: observe Q_MAX1: 10.2167 Q_MAX2: 13.3126 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2296000 STATE: observe Q_MAX1: 10.5654 Q_MAX2: 14.4302 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2297000 STATE: observe Q_MAX1: 11.0127 Q_MAX2: 14.7079 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2298000 STATE: observe Q_MAX1: 11.005 Q_MAX2: 14.5951 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2299000 STATE: observe Q_MAX1: 11.3164 Q_MAX2: 14.8067 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 10, Score: 479
+Frame Step: 2300000 STATE: observe Q_MAX1: 10.5109 Q_MAX2: 14.3878 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2301000 STATE: observe Q_MAX1: 10.7678 Q_MAX2: 13.5012 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2302000 STATE: observe Q_MAX1: 11.142 Q_MAX2: 13.8615 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2303000 STATE: observe Q_MAX1: 10.5522 Q_MAX2: 13.2607 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2304000 STATE: observe Q_MAX1: 11.0834 Q_MAX2: 13.6254 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 11, Score: 250
+Crashed Player 2. Starting New Session. Iteration: 12, Score: 5
+Frame Step: 2305000 STATE: observe Q_MAX1: 10.6937 Q_MAX2: 14.218 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2306000 STATE: observe Q_MAX1: 10.8248 Q_MAX2: 14.3127 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2307000 STATE: observe Q_MAX1: 11.1989 Q_MAX2: 14.8246 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2308000 STATE: observe Q_MAX1: 10.887 Q_MAX2: 14.4955 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 13, Score: 203
+Crashed Player 2. Starting New Session. Iteration: 14, Score: 10
+Frame Step: 2309000 STATE: observe Q_MAX1: 11.1725 Q_MAX2: 13.7736 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2310000 STATE: observe Q_MAX1: 11.2829 Q_MAX2: 13.9625 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2311000 STATE: observe Q_MAX1: 10.6651 Q_MAX2: 13.4922 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2312000 STATE: observe Q_MAX1: 10.9301 Q_MAX2: 13.8804 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 15, Score: 244
+Frame Step: 2313000 STATE: observe Q_MAX1: 11.0987 Q_MAX2: 14.3963 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2314000 STATE: observe Q_MAX1: 10.7557 Q_MAX2: 14.0097 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2315000 STATE: observe Q_MAX1: 10.3906 Q_MAX2: 13.7347 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 16, Score: 114
+Frame Step: 2316000 STATE: observe Q_MAX1: 11.2746 Q_MAX2: 13.9834 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 17, Score: 58
+Crashed Player 2. Starting New Session. Iteration: 18, Score: 18
+Frame Step: 2317000 STATE: observe Q_MAX1: 10.7769 Q_MAX2: 13.6203 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2318000 STATE: observe Q_MAX1: 10.5289 Q_MAX2: 12.9256 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2319000 STATE: observe Q_MAX1: 10.6048 Q_MAX2: 13.0873 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2320000 STATE: observe Q_MAX1: 10.5274 Q_MAX2: 13.2544 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2321000 STATE: observe Q_MAX1: 10.8333 Q_MAX2: 13.8375 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2322000 STATE: observe Q_MAX1: 10.2841 Q_MAX2: 12.8444 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2323000 STATE: observe Q_MAX1: 11.1695 Q_MAX2: 14.4151 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 19, Score: 394
+Frame Step: 2324000 STATE: observe Q_MAX1: 10.5202 Q_MAX2: 13.4199 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2325000 STATE: observe Q_MAX1: 10.4308 Q_MAX2: 13.4865 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2326000 STATE: observe Q_MAX1: 10.881 Q_MAX2: 14.1516 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2327000 STATE: observe Q_MAX1: 10.3626 Q_MAX2: 13.6024 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2328000 STATE: observe Q_MAX1: 10.4666 Q_MAX2: 14.0944 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2329000 STATE: observe Q_MAX1: 10.1278 Q_MAX2: 13.6984 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2330000 STATE: observe Q_MAX1: 10.2444 Q_MAX2: 13.525 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2331000 STATE: observe Q_MAX1: 10.7812 Q_MAX2: 14.2957 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2332000 STATE: observe Q_MAX1: 10.1998 Q_MAX2: 13.826 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2333000 STATE: observe Q_MAX1: 11.1781 Q_MAX2: 15.1909 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 20, Score: 504
+Frame Step: 2334000 STATE: observe Q_MAX1: 11.026 Q_MAX2: 14.9118 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 21, Score: 75
+Frame Step: 2335000 STATE: observe Q_MAX1: 11.2488 Q_MAX2: 15.4823 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2336000 STATE: observe Q_MAX1: 11.2112 Q_MAX2: 14.5593 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2337000 STATE: observe Q_MAX1: 11.1604 Q_MAX2: 14.951 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2338000 STATE: observe Q_MAX1: 10.3347 Q_MAX2: 13.3798 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2339000 STATE: observe Q_MAX1: 11.0602 Q_MAX2: 14.6497 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2340000 STATE: observe Q_MAX1: 10.3234 Q_MAX2: 13.4795 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Crashed Player 2. Starting New Session. Iteration: 22, Score: 338
+Frame Step: 2341000 STATE: observe Q_MAX1: 10.5767 Q_MAX2: 12.9999 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2342000 STATE: observe Q_MAX1: 11.1194 Q_MAX2: 14.962 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2343000 STATE: observe Q_MAX1: 11.0986 Q_MAX2: 14.7072 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2344000 STATE: observe Q_MAX1: 10.5103 Q_MAX2: 13.1118 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2345000 STATE: observe Q_MAX1: 11.1106 Q_MAX2: 15.0677 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2346000 STATE: observe Q_MAX1: 9.85098 Q_MAX2: 12.9325 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2347000 STATE: observe Q_MAX1: 9.9698 Q_MAX2: 13.5348 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 23, Score: 362
+Frame Step: 2348000 STATE: observe Q_MAX1: 10.9114 Q_MAX2: 15.4038 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2349000 STATE: observe Q_MAX1: 10.7558 Q_MAX2: 14.9866 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 24, Score: 91
+Frame Step: 2350000 STATE: observe Q_MAX1: 10.8917 Q_MAX2: 14.6539 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2351000 STATE: observe Q_MAX1: 10.391 Q_MAX2: 13.1691 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 25, Score: 108
+Crashed Player 2. Starting New Session. Iteration: 26, Score: 10
+Frame Step: 2352000 STATE: observe Q_MAX1: 9.69784 Q_MAX2: 13.5245 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2353000 STATE: observe Q_MAX1: 10.6566 Q_MAX2: 13.6294 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2354000 STATE: observe Q_MAX1: 11.0626 Q_MAX2: 14.8528 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2355000 STATE: observe Q_MAX1: 10.335 Q_MAX2: 13.5004 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2356000 STATE: observe Q_MAX1: 10.7802 Q_MAX2: 14.3541 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2357000 STATE: observe Q_MAX1: 10.7849 Q_MAX2: 14.5532 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2358000 STATE: observe Q_MAX1: 10.6551 Q_MAX2: 13.8545 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2359000 STATE: observe Q_MAX1: 10.9199 Q_MAX2: 14.9652 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2360000 STATE: observe Q_MAX1: 10.3309 Q_MAX2: 14.203 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2361000 STATE: explore Q_MAX1: 11.0606 Q_MAX2: 15.2601 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 27, Score: 535
+Frame Step: 2362000 STATE: explore Q_MAX1: 11.0121 Q_MAX2: 14.5871 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2363000 STATE: explore Q_MAX1: 10.5934 Q_MAX2: 13.5721 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2364000 STATE: explore Q_MAX1: 10.4375 Q_MAX2: 13.8829 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2365000 STATE: explore Q_MAX1: 10.413 Q_MAX2: 14.1183 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 28, Score: 187
+Crashed Player 2. Starting New Session. Iteration: 29, Score: 9
+Frame Step: 2366000 STATE: explore Q_MAX1: 10.4785 Q_MAX2: 14.1089 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 30, Score: 47
+Crashed Player 1. Starting New Session. Iteration: 31, Score: 30
+Crashed Player 1. Starting New Session. Iteration: 32, Score: 2
+Frame Step: 2367000 STATE: explore Q_MAX1: 9.89505 Q_MAX2: 16.171 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2368000 STATE: explore Q_MAX1: 11.1349 Q_MAX2: 13.4653 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2369000 STATE: explore Q_MAX1: 11.0059 Q_MAX2: 13.6021 eps_1: 0.0001 eps_2: 0.0001
+
+ubuntu@rl:~/flappy_bird/ComputerVision$ python deep_q_flappy_multiplayer_classbased.py 
+ALSA lib confmisc.c:768:(parse_card) cannot find card '0'
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1251:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM default
+initial epsilon: 0.0001
+initial epsilon: 0.0001
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:206 in trainNetworks.: all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2016-03-02.
+Instructions for updating:
+Please use tf.global_variables instead.
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:207 in trainNetworks.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+./saved_networks/
+./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-2360000
+Successfully loaded: ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-2360000
+Frame Step: 2361000 STATE: observe Q_MAX1: 11.2919 Q_MAX2: 14.0638 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2362000 STATE: observe Q_MAX1: 10.5689 Q_MAX2: 14.0642 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 1, Score: 114
+Frame Step: 2363000 STATE: observe Q_MAX1: 9.87086 Q_MAX2: 13.645 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2364000 STATE: observe Q_MAX1: 10.8037 Q_MAX2: 14.3969 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2365000 STATE: observe Q_MAX1: 10.6164 Q_MAX2: 14.2943 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2366000 STATE: observe Q_MAX1: 9.83539 Q_MAX2: 13.5803 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 2, Score: 218
+Frame Step: 2367000 STATE: observe Q_MAX1: 10.9737 Q_MAX2: 14.7116 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 3, Score: 71
+Frame Step: 2368000 STATE: observe Q_MAX1: 10.3101 Q_MAX2: 14.2299 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2369000 STATE: observe Q_MAX1: 10.7274 Q_MAX2: 14.7593 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 4, Score: 122
+Frame Step: 2370000 STATE: observe Q_MAX1: 11.2287 Q_MAX2: 15.1041 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2371000 STATE: observe Q_MAX1: 10.963 Q_MAX2: 15.3156 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2372000 STATE: observe Q_MAX1: 10.4769 Q_MAX2: 14.2242 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2373000 STATE: observe Q_MAX1: 11.1126 Q_MAX2: 15.5263 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2374000 STATE: observe Q_MAX1: 10.2812 Q_MAX2: 14.3554 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2375000 STATE: observe Q_MAX1: 10.7488 Q_MAX2: 14.7468 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2376000 STATE: observe Q_MAX1: 10.7463 Q_MAX2: 15.2084 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2377000 STATE: observe Q_MAX1: 10.9178 Q_MAX2: 15.8289 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2378000 STATE: observe Q_MAX1: 10.3506 Q_MAX2: 14.6685 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2379000 STATE: observe Q_MAX1: 10.7152 Q_MAX2: 13.1722 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2380000 STATE: observe Q_MAX1: 10.4278 Q_MAX2: 13.0566 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2381000 STATE: observe Q_MAX1: 11.0791 Q_MAX2: 13.772 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 5, Score: 619
+Frame Step: 2382000 STATE: observe Q_MAX1: 10.5412 Q_MAX2: 13.6326 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2383000 STATE: observe Q_MAX1: 10.0722 Q_MAX2: 12.6137 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2384000 STATE: observe Q_MAX1: 11.0942 Q_MAX2: 14.8783 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2385000 STATE: observe Q_MAX1: 10.5571 Q_MAX2: 13.9056 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2386000 STATE: observe Q_MAX1: 11.0191 Q_MAX2: 15.1774 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2387000 STATE: observe Q_MAX1: 10.3281 Q_MAX2: 14.2643 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2388000 STATE: observe Q_MAX1: 9.85881 Q_MAX2: 13.6112 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 6, Score: 389
+Crashed Player 2. Starting New Session. Iteration: 7, Score: 2
+Frame Step: 2389000 STATE: observe Q_MAX1: 10.0948 Q_MAX2: 13.73 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2390000 STATE: observe Q_MAX1: 10.2028 Q_MAX2: 13.5411 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2391000 STATE: observe Q_MAX1: 11.3026 Q_MAX2: 14.9962 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2392000 STATE: observe Q_MAX1: 10.5065 Q_MAX2: 14.3695 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2393000 STATE: observe Q_MAX1: 10.8066 Q_MAX2: 14.5858 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2394000 STATE: observe Q_MAX1: 11.3911 Q_MAX2: 15.3869 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2395000 STATE: observe Q_MAX1: 11.4187 Q_MAX2: 15.2979 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2396000 STATE: observe Q_MAX1: 11.0597 Q_MAX2: 15.4076 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 8, Score: 426
+Frame Step: 2397000 STATE: observe Q_MAX1: 10.5974 Q_MAX2: 14.2057 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2398000 STATE: observe Q_MAX1: 10.8006 Q_MAX2: 14.6275 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2399000 STATE: observe Q_MAX1: 11.1609 Q_MAX2: 15.2054 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2400000 STATE: observe Q_MAX1: 10.8651 Q_MAX2: 14.8744 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2401000 STATE: observe Q_MAX1: 9.83082 Q_MAX2: 13.3321 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2402000 STATE: observe Q_MAX1: 11.2235 Q_MAX2: 14.9599 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2403000 STATE: observe Q_MAX1: 10.1841 Q_MAX2: 13.9031 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2404000 STATE: observe Q_MAX1: 11.1178 Q_MAX2: 14.9991 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2405000 STATE: observe Q_MAX1: 11.1691 Q_MAX2: 15.2642 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2406000 STATE: observe Q_MAX1: 9.85096 Q_MAX2: 13.5244 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2407000 STATE: observe Q_MAX1: 11.3131 Q_MAX2: 15.5046 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2408000 STATE: observe Q_MAX1: 10.4393 Q_MAX2: 14.5047 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2409000 STATE: observe Q_MAX1: 11.2291 Q_MAX2: 15.4097 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2410000 STATE: observe Q_MAX1: 10.8451 Q_MAX2: 15.2266 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2411000 STATE: observe Q_MAX1: 10.8792 Q_MAX2: 15.2987 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2412000 STATE: observe Q_MAX1: 10.7512 Q_MAX2: 15.0228 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2413000 STATE: observe Q_MAX1: 11.1368 Q_MAX2: 15.5531 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2414000 STATE: observe Q_MAX1: 10.6745 Q_MAX2: 14.631 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2415000 STATE: observe Q_MAX1: 10.9611 Q_MAX2: 15.0443 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 9, Score: 1003
+Frame Step: 2416000 STATE: observe Q_MAX1: 10.4208 Q_MAX2: 13.7821 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 10, Score: 83
+Frame Step: 2417000 STATE: observe Q_MAX1: 10.8786 Q_MAX2: 14.9395 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2418000 STATE: observe Q_MAX1: 10.6493 Q_MAX2: 14.7689 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 11, Score: 90
+Frame Step: 2419000 STATE: observe Q_MAX1: 10.8672 Q_MAX2: 15.0546 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2420000 STATE: observe Q_MAX1: 10.8943 Q_MAX2: 15.1674 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2421000 STATE: observe Q_MAX1: 10.914 Q_MAX2: 15.1251 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2422000 STATE: observe Q_MAX1: 10.9831 Q_MAX2: 15.6349 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 12, Score: 210
+Frame Step: 2423000 STATE: observe Q_MAX1: 10.9527 Q_MAX2: 15.4694 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 13, Score: 46
+Frame Step: 2424000 STATE: observe Q_MAX1: 11.0087 Q_MAX2: 15.2159 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2425000 STATE: observe Q_MAX1: 10.8244 Q_MAX2: 14.5546 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 14, Score: 134
+Frame Step: 2426000 STATE: observe Q_MAX1: 11.0853 Q_MAX2: 15.5246 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2427000 STATE: observe Q_MAX1: 10.7487 Q_MAX2: 15.3856 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2428000 STATE: observe Q_MAX1: 10.7902 Q_MAX2: 14.7877 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 15, Score: 161
+Frame Step: 2429000 STATE: observe Q_MAX1: 10.6217 Q_MAX2: 13.7291 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 16, Score: 14
+Frame Step: 2430000 STATE: observe Q_MAX1: 11.31 Q_MAX2: 14.7142 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2431000 STATE: observe Q_MAX1: 10.7506 Q_MAX2: 13.9787 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 17, Score: 151
+Frame Step: 2432000 STATE: observe Q_MAX1: 10.6093 Q_MAX2: 13.9543 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 1. Starting New Session. Iteration: 18, Score: 53
+Frame Step: 2433000 STATE: observe Q_MAX1: 10.5316 Q_MAX2: 12.6344 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2434000 STATE: observe Q_MAX1: 10.9071 Q_MAX2: 14.2857 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2435000 STATE: observe Q_MAX1: 10.9408 Q_MAX2: 13.581 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2436000 STATE: observe Q_MAX1: 11.0594 Q_MAX2: 14.3568 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2437000 STATE: observe Q_MAX1: 11.262 Q_MAX2: 14.8269 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2438000 STATE: observe Q_MAX1: 10.8473 Q_MAX2: 13.7647 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2439000 STATE: observe Q_MAX1: 11.1383 Q_MAX2: 14.987 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2440000 STATE: observe Q_MAX1: 10.7113 Q_MAX2: 14.7991 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2441000 STATE: observe Q_MAX1: 11.2945 Q_MAX2: 15.1337 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2442000 STATE: observe Q_MAX1: 10.0925 Q_MAX2: 13.8024 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2443000 STATE: observe Q_MAX1: 10.9111 Q_MAX2: 14.218 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2444000 STATE: observe Q_MAX1: 9.62657 Q_MAX2: 13.0084 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2445000 STATE: observe Q_MAX1: 11.2094 Q_MAX2: 14.8252 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 19, Score: 678
+Frame Step: 2446000 STATE: observe Q_MAX1: 11.1784 Q_MAX2: 14.4917 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2447000 STATE: observe Q_MAX1: 10.6679 Q_MAX2: 14.4875 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2448000 STATE: observe Q_MAX1: 10.8725 Q_MAX2: 15.1803 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2449000 STATE: observe Q_MAX1: 10.739 Q_MAX2: 13.8837 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2450000 STATE: observe Q_MAX1: 9.83543 Q_MAX2: 13.4572 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2451000 STATE: observe Q_MAX1: 11.4293 Q_MAX2: 14.8657 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2452000 STATE: observe Q_MAX1: 10.1582 Q_MAX2: 14.0775 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 20, Score: 387
+Crashed Player 1. Starting New Session. Iteration: 21, Score: 0
+Frame Step: 2453000 STATE: observe Q_MAX1: 11.0464 Q_MAX2: 14.9333 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2454000 STATE: observe Q_MAX1: 10.9695 Q_MAX2: 14.6378 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2455000 STATE: observe Q_MAX1: 10.9183 Q_MAX2: 14.3667 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2456000 STATE: observe Q_MAX1: 11.3201 Q_MAX2: 14.7304 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2457000 STATE: observe Q_MAX1: 11.0664 Q_MAX2: 15.0082 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2458000 STATE: observe Q_MAX1: 10.9474 Q_MAX2: 14.4137 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2459000 STATE: observe Q_MAX1: 10.2669 Q_MAX2: 13.5956 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2460000 STATE: observe Q_MAX1: 11.1066 Q_MAX2: 15.257 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+Frame Step: 2461000 STATE: explore Q_MAX1: 10.766 Q_MAX2: 15.7031 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 22, Score: 466
+Frame Step: 2462000 STATE: explore Q_MAX1: 11.4145 Q_MAX2: 14.7123 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2463000 STATE: explore Q_MAX1: 10.8764 Q_MAX2: 14.5419 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 23, Score: 114
+Frame Step: 2464000 STATE: explore Q_MAX1: 10.7499 Q_MAX2: 14.6053 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2465000 STATE: explore Q_MAX1: 10.4707 Q_MAX2: 13.4452 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 24, Score: 83
+Crashed Player 2. Starting New Session. Iteration: 25, Score: 35
+Frame Step: 2466000 STATE: explore Q_MAX1: 11.0972 Q_MAX2: 14.4014 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 26, Score: 29
+Frame Step: 2467000 STATE: explore Q_MAX1: 10.2383 Q_MAX2: 13.7112 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 27, Score: 65
+Frame Step: 2468000 STATE: explore Q_MAX1: 10.7887 Q_MAX2: 14.7176 eps_1: 0.0001 eps_2: 0.0001
+Crashed Player 2. Starting New Session. Iteration: 28, Score: 34
+Frame Step: 2469000 STATE: explore Q_MAX1: 11.3596 Q_MAX2: 14.6587 eps_1: 0.0001 eps_2: 0.0001
+Frame Step: 2470000 STATE: explore Q_MAX1: 10.9949 Q_MAX2: 14.4077 eps_1: 0.0001 eps_2: 0.0001
+saved networks! to ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn
+python deep_q_flappy_multiplayer_classbased.py 
+ALSA lib confmisc.c:768:(parse_card) cannot find card '0'
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1251:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4248:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:4727:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2239:(snd_pcm_open_noupdate) Unknown PCM default
+initial epsilon: 0.0001
+initial epsilon: 0.0001
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:206 in trainNetworks.: all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2016-03-02.
+Instructions for updating:
+Please use tf.global_variables instead.
+WARNING:tensorflow:From deep_q_flappy_multiplayer_classbased.py:207 in trainNetworks.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+./saved_networks/
+./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-2470000
+Successfully loaded: ./saved_networks/flappybird_twocolor_horizontal-multi_agent_dqn-2470000
