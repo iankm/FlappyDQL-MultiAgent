@@ -28,7 +28,7 @@ LOAD_CHECKPOINTS = True
 OLD_CHECKPOINTS = False
 NUM_PLAYERS = 2
 DO_TRAIN = True
-num_steps_upon_load = 2150000 # number of frame steps already done by loaded network params
+num_steps_upon_load = 2470000 # number of frame steps already done by loaded network params
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.01)
@@ -253,7 +253,7 @@ def trainNetworks(sess):
             print ('Frame Step: ' + str(t) + ' STATE: ' + str(state) \
                 + ' Q_MAX1: ' + str(q_t_1) + ' Q_MAX2: ' + str(q_t_2) \
 		+ ' eps_1: ' + str(q_learner1.epsilon) + ' eps_2: ' + str(q_learner2.epsilon))
-        if t % 1000 == 0:
+        if t % 10000 == 0:
             print('saved networks! to ' + save_path + GAME + '-multi_agent_dqn')
             saver.save(sess, save_path + GAME + '-multi_agent_dqn', global_step = t)
 
