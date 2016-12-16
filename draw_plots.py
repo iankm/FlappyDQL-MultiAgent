@@ -55,4 +55,5 @@ plt.plot(range(frame_steps - n + 1), ma_p2, 'r', label='10-Moving Average of Pla
 plt.xlabel("Number of Frame Steps (in 1000s)")
 plt.legend(loc = 'upper left')
 plt.title("Maximum Q-value For Each Player During Training")
+plt.grid()
 plt.show()
