@@ -24,11 +24,11 @@ INITIAL_EPSILON = 0.2 # starting value of epsilon 0.0001
 REPLAY_MEMORY = 50000 # number of previous transitions to remember
 BATCH = 32 # size of minibatch
 FRAME_PER_ACTION = 1
-LOAD_CHECKPOINTS = True
-OLD_CHECKPOINTS = False
+LOAD_CHECKPOINTS = False
+OLD_CHECKPOINTS = False 
 NUM_PLAYERS = 2
 DO_TRAIN = True
-num_steps_upon_load = 2470000 # number of frame steps already done by loaded network params
+num_steps_upon_load = 0 # number of frame steps already done by loaded network params
 
 def weight_variable(shape):
     initial = tf.truncated_normal(shape, stddev = 0.01)
@@ -144,11 +144,6 @@ class DeepQNet:
 
         # only train if done observing
         if DO_TRAIN and self.t > (OBSERVATION_STEPS + num_steps_upon_load):
-	    # inserted only to resume training from saved checkpoint with correct epsilon...
-	    #if self.t == OBSERVATION_STEPS + 1:
-	    #	self.t = num_steps_upon_load
-            #	self.epsilon = INITIAL_EPSILON - (INITIAL_EPSILON - FINAL_EPSILON) * num_steps_upon_load/ EXPLORATION_STEPS 
-            # sample a minibatch to train on
             minibatch = random.sample(self.D, BATCH)
 
             # get the batch variables
@@ -187,10 +182,6 @@ def trainNetworks(sess):
     # open up a game state to communicate with emulator
     game_state = game.GameState()
 
-    # printing
-    # a_file = open("logs_" + GAME + "/readout.txt", 'w')
-    # h_file = open("logs_" + GAME + "/hidden.txt", 'w')
-
     # get the first state by doing nothing and preprocess the image to 80x80x4
     do_nothing = np.zeros(ACTIONS_PER_AGENT)
     do_nothing[0] = 1
@@ -203,7 +194,7 @@ def trainNetworks(sess):
     q_learner2 = DeepQNet('player2', x_0, sess)
 
     ### saving future networks and loading pre-saved ones
-    saver = tf.train.Saver(tf.all_variables()) #### put tf.all_variables() as arg??????????
+    saver = tf.train.Saver(tf.all_variables()) 
     sess.run(tf.initialize_all_variables())
     model_checkpoint_path = ''
     if(LOAD_CHECKPOINTS):
@@ -211,7 +202,7 @@ def trainNetworks(sess):
             checkpoint = tf.train.get_checkpoint_state("github_networks")
         else:
             checkpoint = tf.train.get_checkpoint_state(save_path)
-            print(save_path)
+        
         if checkpoint and checkpoint.model_checkpoint_path:
             model_checkpoint_path = checkpoint.model_checkpoint_path
             # saver.restore(sess, checkpoint.model_checkpoint_path)
